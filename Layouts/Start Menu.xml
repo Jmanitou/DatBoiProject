@@ -911,7 +911,7 @@
                         <text>Cognition</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Haettenschweiler,-67,400,1</font>
-                        <color>0,0,0</color>
+                        <color>0,153,51</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
@@ -921,10 +921,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>280</x>
-                        <y>105</y>
+                        <x>350</x>
+                        <y>175</y>
                         <z>0</z>
-                        <width>245</width>
+                        <width>210</width>
                         <height>140</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
