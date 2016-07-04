@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors />
     <used-effects />
@@ -42,32 +43,175 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="startButton" sid="3757568077723024">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8490017892656901" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="storyButton" sid="4024579376953398">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4596557888798762" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Mouse" sid="8456187276203933">
             <plugin id="Mouse" />
+        </object-type>
+        <object-type name="wall" sid="1721434876118877">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2666880153132484" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\DownloadedFiles\BrickWall.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="concrete" sid="5708462374255292">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7729305619653597" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\DownloadedFiles\ConcreteFLoor.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="freeText" sid="2050667499129851">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8434049668052711" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="yourText" sid="7582907928070398">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5331222568629744" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="selfText" sid="9238985302024329">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1232475437712322" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="startButton" sid="2102069166555117">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="99451498244114" speed="5">
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.5" original-source="D:\DatBoiProject\Art\boi.png">
+                        <collision-poly>
+                            <point x="0.038961" y="0.0681818" />
+                            <point x="0.493506" y="0" />
+                            <point x="0.961039" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.961039" y="0.931818" />
+                            <point x="0.493506" y="1" />
+                            <point x="0.038961" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="storyButton" sid="4777981814403404">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3692951087388131" speed="5">
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.5" original-source="D:\DatBoiProject\Art\story.png">
+                        <collision-poly>
+                            <point x="0.038961" y="0.0681818" />
+                            <point x="0.493506" y="0" />
+                            <point x="0.961039" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.961039" y="0.931818" />
+                            <point x="0.493506" y="1" />
+                            <point x="0.038961" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cognition" sid="2806043945231016">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="titleBar" sid="6286884296532506">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6114233183600012" speed="5">
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.5" original-source="D:\DatBoiProject\Art\boi.png">
+                        <collision-poly>
+                            <point x="0.038961" y="0.0681818" />
+                            <point x="0.493506" y="0" />
+                            <point x="0.961039" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.961039" y="0.931818" />
+                            <point x="0.493506" y="1" />
+                            <point x="0.038961" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="9085052733833351">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9550623024185564" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\gunhold.png">
+                        <collision-poly>
+                            <point x="0.214286" y="0.133333" />
+                            <point x="0.5" y="0.288889" />
+                            <point x="0.535714" y="0.288889" />
+                            <point x="0.928571" y="0.488889" />
+                            <point x="0.5" y="0.688889" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0357143" y="0.977778" />
+                            <point x="0.107143" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="soldier" sid="6842492866287446">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9828645011881546" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="D:\DatBoiProject\Art\Player Main\gunhold.png">
+                        <collision-poly>
+                            <point x="0.214286" y="0.133333" />
+                            <point x="0.5" y="0.288889" />
+                            <point x="0.535714" y="0.288889" />
+                            <point x="0.928571" y="0.488889" />
+                            <point x="0.5" y="0.688889" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0357143" y="0.977778" />
+                            <point x="0.107143" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="8415742413858836">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7381847082593285" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="D:\DatBoiProject\Art\Player Main\gunhold.png">
+                        <collision-poly>
+                            <point x="0.214286" y="0.133333" />
+                            <point x="0.5" y="0.288889" />
+                            <point x="0.535714" y="0.288889" />
+                            <point x="0.928571" y="0.488889" />
+                            <point x="0.5" y="0.688889" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0357143" y="0.977778" />
+                            <point x="0.107143" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Start Menu.xml</layout>
+        <layout>Story.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="2" />
