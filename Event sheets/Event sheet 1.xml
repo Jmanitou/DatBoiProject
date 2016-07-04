@@ -2,5 +2,32 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
-    <events />
+    <events>
+        <event-block sid="6176831772145092">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="2843060121930125" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">startButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="8461731485884414" type="startButton" />
+                <action id="-9" name="Destroy" sid="8643149669125066" type="storyButton" />
+            </actions>
+        </event-block>
+        <event-block sid="707206846538754">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="1787823512790297" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">storyButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="5585835876519133" type="startButton" />
+                <action id="-9" name="Destroy" sid="8380195980112764" type="storyButton" />
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
