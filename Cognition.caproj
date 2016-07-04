@@ -15,7 +15,12 @@
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -57,6 +62,11 @@
         </object-type>
         <object-type name="concrete" sid="5708462374255292">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="9922118094761697">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7729305619653597" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\DownloadedFiles\ConcreteFLoor.jpg" />
@@ -149,8 +159,19 @@
         </object-type>
         <object-type name="soldier" sid="6842492866287446">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="BoundToLayout" sid="6711968336693649">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="1130034603264939">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="1773653769878324">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
-                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9828645011881546" speed="5">
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9828645011881546" speed="0">
                     <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\WALK 1.png" />
                     <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\WLK 2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\jumpmanjumpmanthemboisuptosomthin.png" />
@@ -174,6 +195,57 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3015802689613329" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\Art\StoryOutline.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="7841487898210706">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4524004129782813" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="soldierDecal" sid="3326638842476618">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6846356675853997" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\WLK 2.png">
+                        <collision-poly>
+                            <point x="0.2" y="0.108696" />
+                            <point x="0.48" y="0.0869565" />
+                            <point x="0.48" y="0.282609" />
+                            <point x="1" y="0.5" />
+                            <point x="0.52" y="0.73913" />
+                            <point x="0.48" y="1" />
+                            <point x="0.04" y="0.978261" />
+                            <point x="0.08" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="crate" sid="5348466258528319">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="7594166578324279">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6166173765519698" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Contruct 2\Sprites\Platformer pack\Base pack\Tiles\boxExplosive_disabled.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00714286" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
