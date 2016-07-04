@@ -203,6 +203,35 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="line2" sid="2028099705115641">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="line3" sid="9646449030006058">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="line4" sid="4604356613698317">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="line5" sid="9023827369097315">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="blinkingShit" sid="9288253948963418">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5749904870988623" speed="1">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="7762879385260143">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3015802689613329" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\Art\StoryOutline.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
