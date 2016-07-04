@@ -146,74 +146,15 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="9085052733833351">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9550623024185564" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\gunhold.png">
-                        <collision-poly>
-                            <point x="0.214286" y="0.133333" />
-                            <point x="0.5" y="0.288889" />
-                            <point x="0.535714" y="0.288889" />
-                            <point x="0.928571" y="0.488889" />
-                            <point x="0.5" y="0.688889" />
-                            <point x="0.5" y="1" />
-                            <point x="0.0357143" y="0.977778" />
-                            <point x="0.107143" y="0.488889" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="soldier" sid="6842492866287446">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9828645011881546" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="D:\DatBoiProject\Art\Player Main\gunhold.png">
-                        <collision-poly>
-                            <point x="0.214286" y="0.133333" />
-                            <point x="0.5" y="0.288889" />
-                            <point x="0.535714" y="0.288889" />
-                            <point x="0.928571" y="0.488889" />
-                            <point x="0.5" y="0.688889" />
-                            <point x="0.5" y="1" />
-                            <point x="0.0357143" y="0.977778" />
-                            <point x="0.107143" y="0.488889" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9828645011881546" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\WALK 1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\jumpmanjumpmanthemboisuptosomthin.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\WLK 2.png" />
                 </animation>
             </animation-folder>
-        </object-type>
-        <object-type name="Sprite" sid="8415742413858836">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7381847082593285" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="D:\DatBoiProject\Art\Player Main\gunhold.png">
-                        <collision-poly>
-                            <point x="0.214286" y="0.133333" />
-                            <point x="0.5" y="0.288889" />
-                            <point x="0.535714" y="0.288889" />
-                            <point x="0.928571" y="0.488889" />
-                            <point x="0.5" y="0.688889" />
-                            <point x="0.5" y="1" />
-                            <point x="0.0357143" y="0.977778" />
-                            <point x="0.107143" y="0.488889" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="line2" sid="2028099705115641">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="line3" sid="9646449030006058">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="line4" sid="4604356613698317">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="line5" sid="9023827369097315">
-            <plugin id="Text" />
         </object-type>
         <object-type name="blinkingShit" sid="9288253948963418">
             <plugin id="Sprite" />
@@ -237,10 +178,12 @@
     <layout-folder>
         <layout>Start Menu.xml</layout>
         <layout>Story.xml</layout>
+        <layout>Level 1.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="2" />
