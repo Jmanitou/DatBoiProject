@@ -31,5 +31,18 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="6103049037843285">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9415876315856437" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="5981838435876992" type="Audio">
+                    <param id="0" name="Audio file">start_menu_music</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
