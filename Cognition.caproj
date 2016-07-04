@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors />
     <used-effects />
@@ -42,24 +43,89 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="startButton" sid="3757568077723024">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8490017892656901" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="storyButton" sid="4024579376953398">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4596557888798762" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Mouse" sid="8456187276203933">
             <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Wall" sid="1721434876118877">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2666880153132484" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\DownloadedFiles\BrickWall.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Concrete" sid="5708462374255292">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7729305619653597" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\DownloadedFiles\ConcreteFLoor.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FreeText" sid="2050667499129851">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8434049668052711" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="YourText" sid="7582907928070398">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5331222568629744" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="9238985302024329">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1232475437712322" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="StartButton" sid="2102069166555117">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="99451498244114" speed="5">
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.5" original-source="D:\DatBoiProject\Art\boi.png">
+                        <collision-poly>
+                            <point x="0.038961" y="0.0681818" />
+                            <point x="0.493506" y="0" />
+                            <point x="0.961039" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.961039" y="0.931818" />
+                            <point x="0.493506" y="1" />
+                            <point x="0.038961" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="StoryButton" sid="4777981814403404">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3692951087388131" speed="5">
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.5" original-source="D:\DatBoiProject\Art\story.png">
+                        <collision-poly>
+                            <point x="0.038961" y="0.0681818" />
+                            <point x="0.493506" y="0" />
+                            <point x="0.961039" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.961039" y="0.931818" />
+                            <point x="0.493506" y="1" />
+                            <point x="0.038961" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="2806043945231016">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
