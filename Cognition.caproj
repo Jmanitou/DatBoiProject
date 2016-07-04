@@ -228,7 +228,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite3" sid="7762879385260143">
+        <object-type name="story" sid="7762879385260143">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3015802689613329" speed="5">
