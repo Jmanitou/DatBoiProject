@@ -15,6 +15,7 @@
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="shadowlight" version="1">Shadow Light</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
@@ -173,9 +174,30 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9828645011881546" speed="0">
-                    <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\WALK 1.png" />
-                    <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\WLK 2.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\jumpmanjumpmanthemboisuptosomthin.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\WALK 1.png">
+                        <collision-poly>
+                            <point x="0.2" y="0.00543478" />
+                            <point x="0.58" y="0.0652174" />
+                            <point x="0.64" y="0.972826" />
+                            <point x="0.02" y="0.967391" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\WLK 2.png">
+                        <collision-poly>
+                            <point x="0.14" y="0.0163043" />
+                            <point x="0.49" y="0.0815217" />
+                            <point x="0.61" y="1" />
+                            <point x="0.08" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\jumpmanjumpmanthemboisuptosomthin.png">
+                        <collision-poly>
+                            <point x="0.225" y="0" />
+                            <point x="0.558334" y="0.0509259" />
+                            <point x="0.775" y="0.476851" />
+                            <point x="0.0916667" y="0.949074" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -199,7 +221,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="7841487898210706">
+        <object-type name="cry" sid="7841487898210706">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4524004129782813" speed="5">
@@ -253,6 +275,87 @@
         <object-type name="Audio" sid="2415621538899831">
             <plugin id="Audio" />
         </object-type>
+        <object-type name="anarchyDecal" sid="1343270220571219">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6147354363871374" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="circleDecal" sid="9648930862538127">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1563254283765887" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bloodDecal1" sid="3820205589353894">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4489210444409701" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="matelBox" sid="1926876668182201">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="4077582735095223">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7330727051814999" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Contruct 2\Sprites\Platformer pack\Base pack\Tiles\boxCoin.png">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971429" y="0.0285714" />
+                            <point x="1" y="0.5" />
+                            <point x="0.971429" y="0.971429" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0285714" y="0.971429" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ShadowLight" sid="6559753168696832">
+            <plugin id="shadowlight" />
+        </object-type>
+        <object-type name="scDecal" sid="6786015442005919">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8611116317219119" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="reDecal" sid="5525670280963643">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5933539702376993" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="amDecal" sid="9346375948425331">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="113312068638818" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="controls1" sid="5500762185384939">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="controls2" sid="1298339832453325">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -268,7 +371,7 @@
     <global-instances>
         <global-instance type="Mouse" uid="2" />
         <global-instance type="Keyboard" uid="82" />
-        <global-instance type="Audio" uid="83">
+        <global-instance type="Audio" uid="246">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -287,6 +390,7 @@
     <music-folder>
         <file name="start_menu_music.ogg" />
         <file name="level_music.ogg" />
+        <file name="anger_music.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">

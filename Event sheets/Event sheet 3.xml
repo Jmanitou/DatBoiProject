@@ -2,5 +2,22 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 3</name>
-    <events />
+    <events>
+        <event-block sid="8354354717246428">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4456548489803729" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="8613196715292904" type="Audio">
+                    <param id="0" name="Tag">&quot;start_menu_music.ogg&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="9886931803140586" type="Audio">
+                    <param id="0" name="Audio file">anger_music</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
