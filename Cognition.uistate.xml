@@ -10,7 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Start Menu</layout>
+        <layout order="0">Start Menu</layout>
+        <layout active="1" order="2">Story</layout>
         <event-sheet order="1">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
@@ -28,12 +29,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
-        <folder expanded="1" path="animation-folder/Wall/" />
-        <folder expanded="1" path="animation-folder/Concrete/" />
-        <folder expanded="1" path="animation-folder/FreeText/" />
-        <folder expanded="1" path="animation-folder/YourText/" />
+        <folder expanded="1" path="animation-folder/wall/" />
+        <folder expanded="1" path="animation-folder/concrete/" />
+        <folder expanded="1" path="animation-folder/freeText/" />
+        <folder expanded="1" path="animation-folder/yourText/" />
+        <folder expanded="1" path="animation-folder/selfText/" />
+        <folder expanded="1" path="animation-folder/startButton/" />
+        <folder expanded="1" path="animation-folder/storyButton/" />
+        <folder expanded="1" path="animation-folder/titleBar/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />
-        <folder expanded="1" path="animation-folder/StartButton/" />
-        <folder expanded="1" path="animation-folder/StoryButton/" />
+        <folder expanded="1" path="animation-folder/soldier/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
     </folders-expanded>
 </c2uistate>
