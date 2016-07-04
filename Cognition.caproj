@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>Cognition</name>
     <description></description>
@@ -10,6 +10,7 @@
     <unique-id>9176r1pa3b6y</unique-id>
     <saved-with-version>22700</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -156,6 +157,40 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite" sid="8415742413858836">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7381847082593285" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="D:\DatBoiProject\Art\Player Main\gunhold.png">
+                        <collision-poly>
+                            <point x="0.214286" y="0.133333" />
+                            <point x="0.5" y="0.288889" />
+                            <point x="0.535714" y="0.288889" />
+                            <point x="0.928571" y="0.488889" />
+                            <point x="0.5" y="0.688889" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0357143" y="0.977778" />
+                            <point x="0.107143" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="7160071948012648">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="line2" sid="2028099705115641">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="line3" sid="9646449030006058">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="line4" sid="4604356613698317">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="line5" sid="9023827369097315">
+            <plugin id="Text" />
+        </object-type>
         <object-type name="blinkingShit" sid="9288253948963418">
             <plugin id="Sprite" />
             <animation-folder>
@@ -187,6 +222,7 @@
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="2" />
+        <global-instance type="Keyboard" uid="43" />
     </global-instances>
     <sounds-folder />
     <music-folder />
