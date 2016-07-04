@@ -10,6 +10,7 @@
     <unique-id>9176r1pa3b6y</unique-id>
     <saved-with-version>22700</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -203,6 +204,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Keyboard" sid="7160071948012648">
+            <plugin id="Keyboard" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -215,6 +219,7 @@
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="2" />
+        <global-instance type="Keyboard" uid="43" />
     </global-instances>
     <sounds-folder />
     <music-folder />
