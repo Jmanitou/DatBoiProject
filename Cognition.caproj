@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>Cognition</name>
     <description></description>
@@ -152,46 +152,15 @@
             <animation-folder>
                 <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9828645011881546" speed="5">
                     <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\WALK 1.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\jumpmanjumpmanthemboisuptosomthin.png" />
                     <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\WLK 2.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite" sid="8415742413858836">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7381847082593285" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="D:\DatBoiProject\Art\Player Main\gunhold.png">
-                        <collision-poly>
-                            <point x="0.214286" y="0.133333" />
-                            <point x="0.5" y="0.288889" />
-                            <point x="0.535714" y="0.288889" />
-                            <point x="0.928571" y="0.488889" />
-                            <point x="0.5" y="0.688889" />
-                            <point x="0.5" y="1" />
-                            <point x="0.0357143" y="0.977778" />
-                            <point x="0.107143" y="0.488889" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\jumpmanjumpmanthemboisuptosomthin.png" />
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="Keyboard" sid="7160071948012648">
             <plugin id="Keyboard" />
         </object-type>
-        <object-type name="line2" sid="2028099705115641">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="line3" sid="9646449030006058">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="line4" sid="4604356613698317">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="line5" sid="9023827369097315">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="blinkingShit" sid="9288253948963418">
+        <object-type name="cursor" sid="9288253948963418">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5749904870988623" speed="1">
@@ -222,7 +191,7 @@
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="2" />
-        <global-instance type="Keyboard" uid="43" />
+        <global-instance type="Keyboard" uid="82" />
     </global-instances>
     <sounds-folder />
     <music-folder />

@@ -40,7 +40,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/storyButton/" />
         <folder expanded="1" path="animation-folder/titleBar/" />
         <folder expanded="1" path="animation-folder/soldier/" />
-        <folder expanded="1" path="animation-folder/blinkingShit/" />
+        <folder expanded="1" path="animation-folder/cursor/" />
         <folder expanded="1" path="animation-folder/story/" />
     </folders-expanded>
 </c2uistate>
