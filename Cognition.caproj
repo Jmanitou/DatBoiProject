@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
-    <name>Gross</name>
+    <name>Cognition</name>
     <description></description>
     <version>1.0.0.0</version>
     <author></author>
@@ -21,6 +21,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>Start Menu</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -33,14 +34,14 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">(default)</prop>
+        <prop name="Preview browser">Chrome</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder />
     <families />
     <layout-folder>
-        <layout>Layout 1.xml</layout>
+        <layout>Start Menu.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
