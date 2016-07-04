@@ -12,8 +12,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Start Menu</layout>
         <layout order="2">Story</layout>
-        <layout order="4">Level 1</layout>
-        <event-sheet active="1" order="1">Event sheet 1</event-sheet>
+        <layout active="1" order="4">Level 1</layout>
+        <event-sheet order="1">Event sheet 1</event-sheet>
         <event-sheet order="3">Event sheet 2</event-sheet>
     </open-tabs>
     <properties>
@@ -42,8 +42,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/soldier/" />
         <folder expanded="1" path="animation-folder/cursor/" />
         <folder expanded="1" path="animation-folder/story/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/cry/" />
         <folder expanded="1" path="animation-folder/soldierDecal/" />
         <folder expanded="1" path="animation-folder/crate/" />
+        <folder expanded="1" path="animation-folder/anarchyDecal/" />
+        <folder expanded="1" path="animation-folder/circleDecal/" />
+        <folder expanded="1" path="animation-folder/bloodDecal1/" />
+        <folder expanded="1" path="animation-folder/matelBox/" />
+        <folder expanded="1" path="animation-folder/scDecal/" />
+        <folder expanded="1" path="animation-folder/reDecal/" />
+        <folder expanded="1" path="animation-folder/amDecal/" />
     </folders-expanded>
 </c2uistate>
