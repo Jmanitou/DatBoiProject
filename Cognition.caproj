@@ -15,7 +15,6 @@
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
-        <plugin author="Scirra" id="shadowlight" version="1">Shadow Light</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
@@ -205,9 +204,6 @@
                             <point x="0.143519" y="1" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\WALK 1.png">
-                        <image-point name="Imagepoint 1" x="1" y="0.391304" />
-                    </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="Jumping" pingpong="0" repeatcount="1" repeatto="0" sid="6304464623297113" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\jumpmanjumpmanthemboisuptosomthin.png">
@@ -341,9 +337,6 @@
                     </frame>
                 </animation>
             </animation-folder>
-        </object-type>
-        <object-type name="ShadowLight" sid="6559753168696832">
-            <plugin id="shadowlight" />
         </object-type>
         <object-type name="scDecal" sid="6786015442005919">
             <plugin id="Sprite" />
@@ -532,7 +525,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="1231637690389346">
+        <object-type name="laser" sid="1231637690389346">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6791660945152194" speed="5">
@@ -557,6 +550,42 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="chainLink" sid="8696368244590071">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2783459676373955" speed="5">
+                    <frame duration="1" hotspotX="0.516129" hotspotY="0.5" original-source="D:\DatBoiProject\Art\bruuutall bro.png">
+                        <collision-poly>
+                            <point x="0.419355" y="0.224138" />
+                            <point x="0.580645" y="0.224138" />
+                            <point x="0.806452" y="0.5" />
+                            <point x="0.774194" y="0.87931" />
+                            <point x="0.483871" y="0.344828" />
+                            <point x="0.0645161" y="0.965517" />
+                            <point x="0.193548" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="teleporter" sid="1660541834953388">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2777302571571601" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="8" loop="1" name="On" pingpong="0" repeatcount="1" repeatto="0" sid="5896748311170308" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -574,9 +603,9 @@
         <event-sheet>Level 3 Events.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="2" />
-        <global-instance type="Keyboard" uid="82" />
-        <global-instance type="Audio" uid="246">
+        <global-instance type="Mouse" uid="1105" />
+        <global-instance type="Keyboard" uid="1106" />
+        <global-instance type="Audio" uid="1107">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
