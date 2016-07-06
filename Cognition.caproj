@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>Cognition</name>
     <description></description>
@@ -707,12 +707,8 @@
         <event-sheet>Level 1 Events.xml</event-sheet>
         <event-sheet>Level 2 Events.xml</event-sheet>
         <event-sheet>Level 3 Events.xml</event-sheet>
-<<<<<<< HEAD
-        <event-sheet>Event sheet 1.xml</event-sheet>
-        <event-sheet>Event sheet 2.xml</event-sheet>
-=======
         <event-sheet>WakeUp Events.xml</event-sheet>
->>>>>>> 4d1494c802496363449bf7186db71fb246cc1ccf
+        <event-sheet>Event sheet 2.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="1658" />
