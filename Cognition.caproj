@@ -160,6 +160,9 @@
         </object-type>
         <object-type name="soldier" sid="6842492866287446">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Melee" sid="467552123112336" type="boolean" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="BoundToLayout" sid="6711968336693649">
                     <behavior id="bound" />
@@ -644,7 +647,7 @@
         <event-sheet>Start Menu Events.xml</event-sheet>
         <event-sheet>Story Events.xml</event-sheet>
         <event-sheet>Level 1 Events.xml</event-sheet>
-        <event-sheet>Event sheet 4.xml</event-sheet>
+        <event-sheet>Level 2 Events.xml</event-sheet>
         <event-sheet>Level 3 Events.xml</event-sheet>
         <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>

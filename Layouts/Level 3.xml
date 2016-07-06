@@ -54,6 +54,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Melee>false</Melee>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="BoundToLayout">
                             <properties>
@@ -70,7 +73,7 @@
                                 <max-speed>330</max-speed>
                                 <acceleration>1500</acceleration>
                                 <deceleration>1500</deceleration>
-                                <jump-strength>750</jump-strength>
+                                <jump-strength>800</jump-strength>
                                 <gravity>1500</gravity>
                                 <max-fall-speed>1000</max-fall-speed>
                                 <double-jump>Disabled</double-jump>
