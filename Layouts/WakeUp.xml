@@ -2,7 +2,7 @@
 <c2layout>
     <name>WakeUp</name>
     <sid>7189554903832401</sid>
-    <event-sheet>Event sheet 1</event-sheet>
+    <event-sheet>WakeUp Events</event-sheet>
     <size>
         <width>1708</width>
         <height>960</height>
@@ -164,8 +164,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>595</x>
-                        <y>245</y>
+                        <x>1217.73034668</x>
+                        <y>284.090454102</y>
                         <z>0</z>
                         <width>381.453613281</width>
                         <height>263.363800049</height>
@@ -186,8 +186,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>518</x>
-                        <y>385</y>
+                        <x>1198.000976563</x>
+                        <y>94.091003418</y>
                         <z>0</z>
                         <width>208.090545654</width>
                         <height>50.81829834</height>
@@ -208,8 +208,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>631</x>
-                        <y>383</y>
+                        <x>1165.544799805</x>
+                        <y>128.454345703</y>
                         <z>0</z>
                         <width>14</width>
                         <height>21</height>
