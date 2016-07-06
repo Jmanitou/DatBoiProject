@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 2</name>
     <events>
+        <comment>Button to first level</comment>
         <event-block sid="2904454587921119">
             <conditions>
                 <condition id="6" name="On object clicked" sid="8142245748133255" type="Mouse">

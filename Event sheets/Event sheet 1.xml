@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <comment>Buttons</comment>
         <event-block sid="1181138927268831">
             <conditions>
                 <condition id="6" name="On object clicked" sid="6472433449629601" type="Mouse">
@@ -31,6 +32,7 @@
                 </action>
             </actions>
         </event-block>
+        <comment>Music</comment>
         <event-block sid="6103049037843285">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="9415876315856437" type="System" />
