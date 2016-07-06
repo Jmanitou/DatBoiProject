@@ -12,8 +12,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Start Menu</layout>
         <layout order="2">Story</layout>
-        <layout active="1" order="4">Level 1</layout>
-        <layout order="6">Level 2</layout>
+        <layout order="4">Level 1</layout>
+        <layout active="1" order="6">Level 2</layout>
         <event-sheet order="1">Event sheet 1</event-sheet>
         <event-sheet order="3">Event sheet 2</event-sheet>
         <event-sheet order="5">Event sheet 3</event-sheet>
@@ -57,5 +57,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/gore/" />
         <folder expanded="1" path="animation-folder/chain/" />
         <folder expanded="1" path="animation-folder/spike/" />
+        <folder expanded="1" path="animation-folder/cell/" />
+        <folder expanded="1" path="animation-folder/lever/" />
+        <folder expanded="1" path="animation-folder/mirror/" />
+        <folder expanded="1" path="animation-folder/mirror2/" />
+        <folder expanded="1" path="animation-folder/reciever/" />
+        <folder expanded="1" path="animation-folder/metalDoor/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/caveBackground/" />
     </folders-expanded>
 </c2uistate>

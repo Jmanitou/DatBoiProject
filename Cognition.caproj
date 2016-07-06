@@ -174,8 +174,8 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9828645011881546" speed="0">
-                    <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\WALK 1.png">
-                        <image-point name="Imagepoint 1" x="1" y="0.391304" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.510638" original-source="D:\DatBoiProject\Art\Player Main\new walk.png">
+                        <image-point name="Imagepoint 1" x="1" y="0.382979" />
                         <collision-poly>
                             <point x="0.2" y="0.00543478" />
                             <point x="0.58" y="0.0652174" />
@@ -185,13 +185,16 @@
                     </frame>
                 </animation>
                 <animation framecount="2" loop="0" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="3250741893887487" speed="5">
-                    <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\WALK 1.png">
-                        <image-point name="Imagepoint 1" x="1" y="0.391304" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.510638" original-source="D:\DatBoiProject\Art\Player Main\new walk.png">
                         <collision-poly>
-                            <point x="0.155" y="0" />
-                            <point x="0.695" y="0.0842391" />
-                            <point x="0.65" y="1" />
-                            <point x="0" y="1" />
+                            <point x="0.166667" y="0" />
+                            <point x="0.481481" y="0.0638298" />
+                            <point x="0.518519" y="0.276596" />
+                            <point x="0.407407" y="0.489362" />
+                            <point x="0.518519" y="0.723404" />
+                            <point x="0.601852" y="0.989362" />
+                            <point x="0.037037" y="0.978723" />
+                            <point x="0.111111" y="0.489362" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.518519" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\stand.png">
@@ -431,13 +434,143 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9662485134111926" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.502092" original-source="D:\Contruct 2\Sprites\Tappy Plane\rockGrass.png">
                         <collision-poly>
-                            <point x="0.5" y="0.146444" />
+                            <point x="0.592593" y="0" />
                             <point x="0.685185" y="0.142259" />
                             <point x="0.990741" y="0.995816" />
                             <point x="0.00925926" y="0.995816" />
                             <point x="0.342593" y="0.497908" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell" sid="7707378200785109">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9767515448337604" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Contruct 2\Sprites\Platformer pack\Request pack\laserLeft.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.157143" />
+                            <point x="0.842857" y="0.157143" />
+                            <point x="1" y="0.5" />
+                            <point x="0.842857" y="0.842857" />
+                            <point x="0.5" y="1" />
+                            <point x="0.242857" y="0.757143" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lever" sid="2140398252098335">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8459289809886685" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Contruct 2\Sprites\Platformer pack\Request pack\laserSwitchRedOn.png">
+                        <collision-poly>
+                            <point x="0.342857" y="0.342857" />
+                            <point x="0.5" y="0.3" />
+                            <point x="0.942857" y="0.0571429" />
+                            <point x="0.757143" y="0.5" />
+                            <point x="0.942857" y="0.942857" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0571429" y="0.942857" />
+                            <point x="0.242857" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mirror" sid="1849346577303234">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6377346987877696" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Contruct 2\Sprites\Platformer pack\Request pack\tile_20.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.5" />
+                            <point x="0.514286" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mirror2" sid="1793750201397493">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8662066137970731" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Contruct 2\Sprites\Platformer pack\Request pack\tile_20.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.5" />
+                            <point x="0.514286" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="reciever" sid="8435596492619421">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9543324508470717" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Contruct 2\Sprites\Platformer pack\Request pack\laserUpShoot.png">
+                        <collision-poly>
+                            <point x="0.242857" y="0.242857" />
+                            <point x="0.5" y="0.0714286" />
+                            <point x="0.757143" y="0.242857" />
+                            <point x="0.842857" y="0.5" />
+                            <point x="0.828571" y="0.828571" />
+                            <point x="0.5" y="1" />
+                            <point x="0.171429" y="0.828571" />
+                            <point x="0.157143" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="metalDoor" sid="700248244516191">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="2943565833063157">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5160346291132951" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Contruct 2\Sprites\Platformer pack\Request pack\metalMid.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="1231637690389346">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6791660945152194" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Contruct 2\Sprites\Platformer pack\Request pack\laserBlueHorizontal.png">
+                        <collision-poly>
+                            <point x="0" y="0.371429" />
+                            <point x="0.628571" y="0.371429" />
+                            <point x="1" y="0.371429" />
+                            <point x="1" y="0.628571" />
+                            <point x="0.371429" y="0.628571" />
+                            <point x="0" y="0.628572" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="caveBackground" sid="5700154714811085">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="464437451639586" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502994" original-source="D:\DatBoiProject\DownloadedFiles\Cave small.png" />
                 </animation>
             </animation-folder>
         </object-type>
