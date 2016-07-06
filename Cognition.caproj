@@ -2,7 +2,7 @@
 <c2project>
     <name>Cognition</name>
     <description></description>
-    <version>1.0.0.0</version>
+    <version>0.1.0.0</version>
     <author></author>
     <author-email></author-email>
     <author-website>http://</author-website>
@@ -399,12 +399,14 @@
         <layout>Story.xml</layout>
         <layout>Level 1.xml</layout>
         <layout>Level 2.xml</layout>
+        <layout>Level 3.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
-        <event-sheet>Event sheet 2.xml</event-sheet>
-        <event-sheet>Event sheet 3.xml</event-sheet>
+        <event-sheet>Start Menu Events.xml</event-sheet>
+        <event-sheet>Story Events.xml</event-sheet>
+        <event-sheet>Level 1 Events.xml</event-sheet>
         <event-sheet>Event sheet 4.xml</event-sheet>
+        <event-sheet>Event sheet 5.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="2" />
