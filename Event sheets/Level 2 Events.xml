@@ -31,6 +31,9 @@
                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="1140338096638668" type="soldier">
                     <param id="0" name="Instance variable">Melee</param>
                 </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="5228228321816944" type="soldier">
+                    <param id="0" name="Instance variable">Jump</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="7939564477769599" type="soldier">
@@ -49,6 +52,9 @@
                 </condition>
                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="7565505215857512" type="soldier">
                     <param id="0" name="Instance variable">Melee</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="2392195474423704" type="soldier">
+                    <param id="0" name="Instance variable">Jump</param>
                 </condition>
             </conditions>
             <actions>
