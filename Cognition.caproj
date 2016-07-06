@@ -406,7 +406,7 @@
         <event-sheet>Story Events.xml</event-sheet>
         <event-sheet>Level 1 Events.xml</event-sheet>
         <event-sheet>Event sheet 4.xml</event-sheet>
-        <event-sheet>Event sheet 5.xml</event-sheet>
+        <event-sheet>Level 3 Events.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="2" />
