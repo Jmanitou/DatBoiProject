@@ -12,6 +12,12 @@
                 <action id="6" name="Stop" sid="367911349633348" type="Audio">
                     <param id="0" name="Tag">&quot;anger_music.ogg&quot;</param>
                 </action>
+                <action id="0" name="Play" sid="1900103141094319" type="Audio">
+                    <param id="0" name="Audio file">fear_music</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="-13" name="Set boolean" sid="7212048129424911" type="soldier">
                     <param id="0" name="Instance variable">Melee</param>
                     <param id="1" name="Value">0</param>

@@ -682,6 +682,7 @@
         <file name="start_menu_music.ogg" />
         <file name="level_music.ogg" />
         <file name="anger_music.ogg" />
+        <file name="fear_music.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">
