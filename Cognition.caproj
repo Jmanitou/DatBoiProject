@@ -633,6 +633,14 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="invisibleButton" sid="2763139618816304">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4831202766595176" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -652,9 +660,9 @@
         <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="1105" />
-        <global-instance type="Keyboard" uid="1106" />
-        <global-instance type="Audio" uid="1107">
+        <global-instance type="Mouse" uid="1658" />
+        <global-instance type="Keyboard" uid="1659" />
+        <global-instance type="Audio" uid="1660">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
