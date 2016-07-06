@@ -625,11 +625,50 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="6348314342464841">
+        <object-type name="orders" sid="6348314342464841">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3152322651279062" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.501484" original-source="D:\DatBoiProject\Art\Orders.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="transmission" sid="5440902903233113">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3054258568005022" speed="5">
+                    <frame duration="1" hotspotX="0.502008" hotspotY="0.507246" original-source="D:\DatBoiProject\Art\end transmission.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="digital" sid="9559362456343276">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8367399697851285" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510638" original-source="D:\DatBoiProject\Art\Player Main\gunhold.png">
+                        <collision-poly>
+                            <point x="0.233333" y="0.148936" />
+                            <point x="0.5" y="0.297872" />
+                            <point x="0.533333" y="0.297872" />
+                            <point x="0.9" y="0.489362" />
+                            <point x="0.5" y="0.680851" />
+                            <point x="0.5" y="0.978723" />
+                            <point x="0.0666667" y="0.957447" />
+                            <point x="0.133333" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\stand.png">
+                        <collision-poly>
+                            <point x="0.222222" y="0.130435" />
+                            <point x="0.481481" y="0.0652174" />
+                            <point x="0.518519" y="0.282609" />
+                            <point x="0.37037" y="0.5" />
+                            <point x="0.407407" y="0.652174" />
+                            <point x="0.481481" y="0.456522" />
+                            <point x="0.148148" y="0.913043" />
+                            <point x="0.148148" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -652,9 +691,9 @@
         <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="1105" />
-        <global-instance type="Keyboard" uid="1106" />
-        <global-instance type="Audio" uid="1107">
+        <global-instance type="Mouse" uid="1658" />
+        <global-instance type="Keyboard" uid="1659" />
+        <global-instance type="Audio" uid="1660">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>

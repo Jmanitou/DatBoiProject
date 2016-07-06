@@ -19,8 +19,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="1">Start Menu Events</event-sheet>
         <event-sheet order="3">Story Events</event-sheet>
         <event-sheet order="5">Level 1 Events</event-sheet>
-        <event-sheet order="9">Level 3 Events</event-sheet>
-        <event-sheet active="1" order="7">Level 2 Events</event-sheet>
+        <event-sheet order="8">Level 2 Events</event-sheet>
+        <event-sheet order="10">Level 3 Events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -75,6 +75,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/taskBar/" />
         <folder expanded="1" path="animation-folder/loading/" />
         <folder expanded="1" path="animation-folder/scan/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/orders/" />
+        <folder expanded="1" path="animation-folder/transmission/" />
+        <folder expanded="1" path="animation-folder/digital/" />
     </folders-expanded>
 </c2uistate>
