@@ -175,6 +175,7 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9828645011881546" speed="0">
                     <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\WALK 1.png">
+                        <image-point name="Imagepoint 1" x="1" y="0.391304" />
                         <collision-poly>
                             <point x="0.2" y="0.00543478" />
                             <point x="0.58" y="0.0652174" />
@@ -184,11 +185,15 @@
                     </frame>
                 </animation>
                 <animation framecount="2" loop="0" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="3250741893887487" speed="5">
-                    <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\WALK 1.png" />
-                    <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\WLK 2.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\WALK 1.png">
+                        <image-point name="Imagepoint 1" x="1" y="0.391304" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\stand.png" />
                 </animation>
                 <animation framecount="1" loop="0" name="Jumping" pingpong="0" repeatcount="1" repeatto="0" sid="6304464623297113" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\jumpmanjumpmanthemboisuptosomthin.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\jumpmanjumpmanthemboisuptosomthin.png">
+                        <image-point name="Imagepoint 1" x="0.966667" y="0.333333" />
+                    </frame>
                 </animation>
                 <animation framecount="2" loop="0" name="Melee" pingpong="0" repeatcount="1" repeatto="0" sid="1986268626571169" speed="5">
                     <frame duration="1" hotspotX="0.517241" hotspotY="0.509804" original-source="D:\DatBoiProject\Art\Player Main\brandish.png" />
@@ -393,11 +398,13 @@
         <layout>Start Menu.xml</layout>
         <layout>Story.xml</layout>
         <layout>Level 1.xml</layout>
+        <layout>Level 2.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>Event sheet 2.xml</event-sheet>
         <event-sheet>Event sheet 3.xml</event-sheet>
+        <event-sheet>Event sheet 4.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="2" />
