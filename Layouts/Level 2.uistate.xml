@@ -11,7 +11,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <lookat-y>875</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
-    <snap-to-grid>1</snap-to-grid>
+    <snap-to-grid>0</snap-to-grid>
     <show-grid>1</show-grid>
     <snap-width>35</snap-width>
     <snap-height>35</snap-height>
