@@ -208,9 +208,6 @@
         <comment>Pressure Plate</comment>
         <event-block sid="7031429542162351">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="3827935197989911" type="soldier">
-                    <param id="0" name="Object">invisibleButton</param>
-                </condition>
             </conditions>
             <actions />
             <sub-events>
