@@ -2,7 +2,7 @@
 <c2project>
     <name>Cognition</name>
     <description></description>
-    <version>1.0.0.0</version>
+    <version>0.1.0.0</version>
     <author></author>
     <author-email></author-email>
     <author-website>http://</author-website>
@@ -179,12 +179,13 @@
                         <collision-poly>
                             <point x="0.2" y="0.00543478" />
                             <point x="0.58" y="0.0652174" />
-                            <point x="0.665" y="0.986413" />
-                            <point x="0" y="0.986413" />
+                            <point x="0.64" y="0.972826" />
+                            <point x="0.02" y="0.967391" />
                         </collision-poly>
                     </frame>
                 </animation>
                 <animation framecount="2" loop="0" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="3250741893887487" speed="5">
+<<<<<<< HEAD
                     <frame duration="1" hotspotX="0.518519" hotspotY="0.510638" original-source="D:\DatBoiProject\Art\Player Main\new walk.png">
                         <collision-poly>
                             <point x="0.166667" y="0" />
@@ -204,36 +205,21 @@
                             <point x="0.361111" y="0.997283" />
                             <point x="0.143519" y="1" />
                         </collision-poly>
+=======
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\WALK 1.png">
+                        <image-point name="Imagepoint 1" x="1" y="0.391304" />
+>>>>>>> a8a398f4f3086043ddd1758fe2775bc635d89cd2
                     </frame>
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\stand.png" />
                 </animation>
                 <animation framecount="1" loop="0" name="Jumping" pingpong="0" repeatcount="1" repeatto="0" sid="6304464623297113" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\jumpmanjumpmanthemboisuptosomthin.png">
                         <image-point name="Imagepoint 1" x="0.966667" y="0.333333" />
-                        <collision-poly>
-                            <point x="0.258333" y="0" />
-                            <point x="0.575" y="0.0578704" />
-                            <point x="0.725" y="0.490741" />
-                            <point x="0.1" y="0.949074" />
-                        </collision-poly>
                     </frame>
                 </animation>
                 <animation framecount="2" loop="0" name="Melee" pingpong="0" repeatcount="1" repeatto="0" sid="1986268626571169" speed="5">
-                    <frame duration="1" hotspotX="0.517241" hotspotY="0.509804" original-source="D:\DatBoiProject\Art\Player Main\brandish.png">
-                        <collision-poly>
-                            <point x="0.206897" y="0.0588235" />
-                            <point x="0.732759" y="0.29902" />
-                            <point x="0.637931" y="0.985294" />
-                            <point x="0.0344828" y="0.946079" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\DatBoiProject\Art\Player Main\slash.png">
-                        <collision-poly>
-                            <point x="0.323864" y="0.00609756" />
-                            <point x="0.971591" y="0.0243903" />
-                            <point x="0.443182" y="0.97561" />
-                            <point x="0.0284091" y="0.993902" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.509804" original-source="D:\DatBoiProject\Art\Player Main\brandish.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\DatBoiProject\Art\Player Main\slash.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -428,6 +414,7 @@
                 </animation>
             </animation-folder>
         </object-type>
+<<<<<<< HEAD
         <object-type name="spike" sid="1209001057195084">
             <plugin id="Sprite" />
             <animation-folder>
@@ -574,6 +561,8 @@
                 </animation>
             </animation-folder>
         </object-type>
+=======
+>>>>>>> a8a398f4f3086043ddd1758fe2775bc635d89cd2
     </object-folder>
     <families />
     <layout-folder>
@@ -581,12 +570,14 @@
         <layout>Story.xml</layout>
         <layout>Level 1.xml</layout>
         <layout>Level 2.xml</layout>
+        <layout>Level 3.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
-        <event-sheet>Event sheet 2.xml</event-sheet>
-        <event-sheet>Event sheet 3.xml</event-sheet>
+        <event-sheet>Start Menu Events.xml</event-sheet>
+        <event-sheet>Story Events.xml</event-sheet>
+        <event-sheet>Level 1 Events.xml</event-sheet>
         <event-sheet>Event sheet 4.xml</event-sheet>
+        <event-sheet>Level 3 Events.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="2" />

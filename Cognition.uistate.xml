@@ -13,10 +13,19 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">Start Menu</layout>
         <layout order="2">Story</layout>
         <layout order="4">Level 1</layout>
+<<<<<<< HEAD
         <layout active="1" order="6">Level 2</layout>
         <event-sheet order="1">Event sheet 1</event-sheet>
         <event-sheet order="3">Event sheet 2</event-sheet>
         <event-sheet order="5">Event sheet 3</event-sheet>
+=======
+        <layout order="6">Level 2</layout>
+        <layout active="1" order="7">Level 3</layout>
+        <event-sheet order="1">Start Menu Events</event-sheet>
+        <event-sheet order="3">Story Events</event-sheet>
+        <event-sheet order="5">Level 1 Events</event-sheet>
+        <event-sheet order="8">Level 3 Events</event-sheet>
+>>>>>>> a8a398f4f3086043ddd1758fe2775bc635d89cd2
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -56,6 +65,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/amDecal/" />
         <folder expanded="1" path="animation-folder/gore/" />
         <folder expanded="1" path="animation-folder/chain/" />
+<<<<<<< HEAD
         <folder expanded="1" path="animation-folder/spike/" />
         <folder expanded="1" path="animation-folder/cell/" />
         <folder expanded="1" path="animation-folder/lever/" />
@@ -65,5 +75,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/metalDoor/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/caveBackground/" />
+=======
+>>>>>>> a8a398f4f3086043ddd1758fe2775bc635d89cd2
     </folders-expanded>
 </c2uistate>
