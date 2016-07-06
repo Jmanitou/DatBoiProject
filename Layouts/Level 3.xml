@@ -56,6 +56,7 @@
                     </properties>
                     <instance-variables>
                         <Melee>false</Melee>
+                        <Jump>false</Jump>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="BoundToLayout">
