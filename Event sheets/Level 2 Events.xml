@@ -12,6 +12,12 @@
                 <action id="6" name="Stop" sid="367911349633348" type="Audio">
                     <param id="0" name="Tag">&quot;anger_music.ogg&quot;</param>
                 </action>
+                <action id="0" name="Play" sid="1900103141094319" type="Audio">
+                    <param id="0" name="Audio file">fear_music</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="-13" name="Set boolean" sid="7212048129424911" type="soldier">
                     <param id="0" name="Instance variable">Melee</param>
                     <param id="1" name="Value">0</param>
@@ -143,19 +149,67 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-1" name="Set X" sid="1547992556374199" type="soldier">
+                <action disabled="1" id="-1" name="Set X" sid="1547992556374199" type="soldier">
                     <param id="0" name="X">210</param>
                 </action>
-                <action id="-2" name="Set Y" sid="8226826465712444" type="soldier">
+                <action disabled="1" id="-2" name="Set Y" sid="8226826465712444" type="soldier">
                     <param id="0" name="Y">175</param>
                 </action>
+                <action id="-26" name="Restart layout" sid="4441950211744307" type="System" />
             </actions>
+            <sub-events>
+                <event-block sid="77919617452309">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="9661178399977778" type="concrete">
+                            <param id="0" name="Unique ID">984</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="2397503730715619" type="concrete">
+                            <param id="0" name="X">1435</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="5139583448332407" type="concrete">
+                            <param id="0" name="Y">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7929429823590737">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="3515872875579944" type="concrete">
+                            <param id="0" name="Unique ID">985</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="5344952362488584" type="concrete">
+                            <param id="0" name="X">1435</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="406252676998499" type="concrete">
+                            <param id="0" name="Y">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7210960078424569">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="9023496493766776" type="concrete">
+                            <param id="0" name="Unique ID">986</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="7181481926587391" type="concrete">
+                            <param id="0" name="X">1435</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="948045040208062" type="concrete">
+                            <param id="0" name="Y">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <comment>Pressure Plate</comment>
         <event-block sid="7031429542162351">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="3827935197989911" type="soldier">
-                    <param id="0" name="Object">concrete</param>
+                    <param id="0" name="Object">invisibleButton</param>
                 </condition>
             </conditions>
             <actions />
@@ -166,7 +220,14 @@
                             <param id="0" name="Unique ID">984</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-1" name="Set X" sid="8347080900524965" type="concrete">
+                            <param id="0" name="X">1435</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="1355670754362209" type="concrete">
+                            <param id="0" name="Y">455</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="5998908173780622">
                     <conditions>
@@ -174,7 +235,14 @@
                             <param id="0" name="Unique ID">985</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-1" name="Set X" sid="5624859111172678" type="concrete">
+                            <param id="0" name="X">1435</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="8475089729748592" type="concrete">
+                            <param id="0" name="Y">525</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="973447480282978">
                     <conditions>
@@ -182,7 +250,14 @@
                             <param id="0" name="Unique ID">986</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-1" name="Set X" sid="4857071241032267" type="concrete">
+                            <param id="0" name="X">1435</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="3187653751504091" type="concrete">
+                            <param id="0" name="Y">595</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-block>
