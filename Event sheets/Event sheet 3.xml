@@ -51,5 +51,48 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="6421904728842875">
+            <conditions>
+                <condition id="2" name="Key is down" sid="5910155868599511" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1449533010954579" type="soldier">
+                    <param id="0" name="Animation">&quot;Jumping&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="2021237147780164">
+            <conditions>
+                <condition id="3" name="On key released" sid="4683170981341468" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+                <condition id="3" name="On key released" sid="8063511899361653" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1332477876175391" type="soldier">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1588310394360716">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="7227859423306995" type="soldier" />
+                <condition id="2" name="Is playing" sid="2775582316766556" type="soldier">
+                    <param id="0" name="Animation">&quot;Jumping&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="165563395678199" type="soldier">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
