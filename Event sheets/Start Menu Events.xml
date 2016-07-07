@@ -32,6 +32,20 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="8471739935001851">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="4479315348060939" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">soldierDecal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="931194323931583" type="System">
+                    <param id="0" name="Layout">Level Select</param>
+                </action>
+            </actions>
+        </event-block>
         <comment>Music</comment>
         <event-block sid="6103049037843285">
             <conditions>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Level Select Events</name>
+    <events>
+        <comment>Buttons</comment>
+        <event-block sid="3225887072886902">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="7634507867453514" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">lvl1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="1191687738033706" type="System">
+                    <param id="0" name="Layout">Level 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1223893589830315">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="3264854506924552" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">lvl2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="1168897145461711" type="System">
+                    <param id="0" name="Layout">Level 2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2415266987504178">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="3952328743015781" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">lvl3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3030247282121497" type="System">
+                    <param id="0" name="Layout">Level 3</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
