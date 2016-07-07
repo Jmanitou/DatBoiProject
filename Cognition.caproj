@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>Cognition</name>
     <description></description>
@@ -162,6 +162,7 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="Melee" sid="467552123112336" type="boolean" />
+                <instance-variable name="Jump" sid="8705622193366494" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="BoundToLayout" sid="6711968336693649">
@@ -625,7 +626,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="6348314342464841">
+        <object-type name="orders" sid="6348314342464841">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3152322651279062" speed="5">
@@ -633,13 +634,61 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="invisibleButton" sid="2763139618816304">
+        <object-type name="transmission" sid="5440902903233113">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4831202766595176" speed="5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3054258568005022" speed="5">
+                    <frame duration="1" hotspotX="0.502008" hotspotY="0.507246" original-source="D:\DatBoiProject\Art\end transmission.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="digital" sid="9559362456343276">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8367399697851285" speed="2">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510638" original-source="D:\DatBoiProject\Art\Player Main\gunhold.png">
+                        <collision-poly>
+                            <point x="0.233333" y="0.148936" />
+                            <point x="0.5" y="0.297872" />
+                            <point x="0.533333" y="0.297872" />
+                            <point x="0.9" y="0.489362" />
+                            <point x="0.5" y="0.680851" />
+                            <point x="0.5" y="0.978723" />
+                            <point x="0.0666667" y="0.957447" />
+                            <point x="0.133333" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\stand.png">
+                        <collision-poly>
+                            <point x="0.222222" y="0.130435" />
+                            <point x="0.481481" y="0.0652174" />
+                            <point x="0.518519" y="0.282609" />
+                            <point x="0.37037" y="0.5" />
+                            <point x="0.407407" y="0.652174" />
+                            <point x="0.481481" y="0.456522" />
+                            <point x="0.148148" y="0.913043" />
+                            <point x="0.148148" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pressurePlate" sid="5410383462253603">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1248758210210298" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="lvl1" sid="5423701746677656">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="lvl2" sid="5697380938101923">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text" sid="9409172316976573">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
@@ -650,6 +699,7 @@
         <layout>Level 2.xml</layout>
         <layout>Level 3.xml</layout>
         <layout>WakeUp.xml</layout>
+        <layout>Level Select.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Start Menu Events.xml</event-sheet>
@@ -657,7 +707,8 @@
         <event-sheet>Level 1 Events.xml</event-sheet>
         <event-sheet>Level 2 Events.xml</event-sheet>
         <event-sheet>Level 3 Events.xml</event-sheet>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>WakeUp Events.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="1658" />

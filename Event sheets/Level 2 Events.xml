@@ -12,14 +12,12 @@
                 <action id="6" name="Stop" sid="367911349633348" type="Audio">
                     <param id="0" name="Tag">&quot;anger_music.ogg&quot;</param>
                 </action>
-                <action id="0" name="Play" sid="1900103141094319" type="Audio">
-                    <param id="0" name="Audio file">fear_music</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
                 <action id="-13" name="Set boolean" sid="7212048129424911" type="soldier">
                     <param id="0" name="Instance variable">Melee</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="3715397480845764" type="soldier">
+                    <param id="0" name="Instance variable">Jump</param>
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
@@ -32,6 +30,9 @@
                 </condition>
                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="1140338096638668" type="soldier">
                     <param id="0" name="Instance variable">Melee</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="5228228321816944" type="soldier">
+                    <param id="0" name="Instance variable">Jump</param>
                 </condition>
             </conditions>
             <actions>
@@ -52,6 +53,9 @@
                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="7565505215857512" type="soldier">
                     <param id="0" name="Instance variable">Melee</param>
                 </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="2392195474423704" type="soldier">
+                    <param id="0" name="Instance variable">Jump</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="2741650023827113" type="soldier">
@@ -71,11 +75,25 @@
                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="9536054870637518" type="soldier">
                     <param id="0" name="Instance variable">Melee</param>
                 </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="4538715917276073" type="soldier">
+                    <param id="0" name="Instance variable">Jump</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="4992775254694764" type="soldier">
                     <param id="0" name="Animation">&quot;Jumping&quot;</param>
                     <param id="1" name="From">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="8936390594304861" type="soldier">
+                    <param id="0" name="Instance variable">Jump</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="3545609147373485" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="846196364853689" type="soldier">
+                    <param id="0" name="Instance variable">Jump</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
@@ -129,7 +147,7 @@
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="-16" name="Wait" sid="618559626176818" type="System">
-                    <param id="0" name="Seconds">1.0</param>
+                    <param id="0" name="Seconds">0.5</param>
                 </action>
                 <action id="4" name="Set animation" sid="9071705075496388" type="soldier">
                     <param id="0" name="Animation">&quot;Default&quot;</param>
@@ -208,8 +226,8 @@
         <comment>Pressure Plate</comment>
         <event-block sid="7031429542162351">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="3827935197989911" type="soldier">
-                    <param id="0" name="Object">invisibleButton</param>
+                <condition id="0" name="On collision with another object" sid="9317171419266118" type="pressurePlate">
+                    <param id="0" name="Object">soldier</param>
                 </condition>
             </conditions>
             <actions />
