@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2uistate>
     <!--This is a UI state file - its content describes the user interface settings when the project was last open.
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
@@ -13,9 +13,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">Start Menu</layout>
         <layout order="2">Story</layout>
         <layout order="4">Level 1</layout>
-        <layout order="6">Level 2</layout>
+        <layout active="1" order="6">Level 2</layout>
         <layout order="8">Level 3</layout>
-        <layout active="1" order="10">WakeUp</layout>
+        <layout order="10">WakeUp</layout>
         <event-sheet order="1">Start Menu Events</event-sheet>
         <event-sheet order="3">Story Events</event-sheet>
         <event-sheet order="5">Level 1 Events</event-sheet>
