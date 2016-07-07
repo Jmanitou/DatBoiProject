@@ -277,7 +277,52 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="1732833126686776">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="205711841953402" type="TiledBackground">
+                            <param id="0" name="Unique ID">945</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="2719488829712936" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="4290109852779643" type="TiledBackground">
+                            <param id="0" name="X">1470</param>
+                            <param id="1" name="Y">70</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1888139097818244">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="4496670704863444" type="TiledBackground">
+                            <param id="0" name="Unique ID">946</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="1999413866079342" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="3454688711630144" type="TiledBackground">
+                            <param id="0" name="X">1470</param>
+                            <param id="1" name="Y">140</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
+        </event-block>
+        <comment>Portal</comment>
+        <event-block sid="7126729456049952">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2758148274404645" type="soldier">
+                    <param id="0" name="Object">teleporter</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="2150831443177029" type="System">
+                    <param id="0" name="Layout">Level 3</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

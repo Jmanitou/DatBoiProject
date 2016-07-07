@@ -133,7 +133,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite" uid="1764">
+                <instance type="backButton" uid="1764">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -143,8 +143,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>595</x>
-                        <y>420</y>
+                        <x>572</x>
+                        <y>424</y>
                         <z>0</z>
                         <width>250</width>
                         <height>250</height>
