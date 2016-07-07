@@ -534,7 +534,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="concrete" uid="1664">
+                <instance type="concrete" uid="1105">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

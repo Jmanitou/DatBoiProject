@@ -726,7 +726,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="4161102788153139">
+        <object-type name="level2decal" sid="4161102788153139">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5467864885318705" speed="5">
@@ -741,7 +741,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite3" sid="7236070023309286">
+        <object-type name="level3decal" sid="7236070023309286">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7461299064055799" speed="5">

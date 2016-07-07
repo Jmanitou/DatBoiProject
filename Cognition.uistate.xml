@@ -84,7 +84,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/pressurePlate/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/level1decal/" />
-        <folder expanded="1" path="animation-folder/Sprite2/" />
-        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/level2decal/" />
+        <folder expanded="1" path="animation-folder/level3decal/" />
     </folders-expanded>
 </c2uistate>
