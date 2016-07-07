@@ -12,8 +12,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Start Menu</layout>
         <layout order="2">Story</layout>
+<<<<<<< HEAD
         <layout order="4">Level 1</layout>
         <layout active="1" order="6">Level 2</layout>
+=======
+        <layout active="1" order="4">Level 1</layout>
+        <layout order="6">Level 2</layout>
+>>>>>>> 9312e259b6eded6871a78deec7167ef63656311d
         <layout order="8">Level 3</layout>
         <layout order="10">WakeUp</layout>
         <layout order="12">Level Select</layout>
