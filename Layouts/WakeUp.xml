@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="blackBack" uid="1106">
+                <instance type="blackBack" uid="1107">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -88,7 +88,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="taskBar" uid="1107">
+                <instance type="taskBar" uid="1656">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -110,7 +110,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="loading" uid="1656">
+                <instance type="loading" uid="1657">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -132,7 +132,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="scan" uid="1657">
+                <instance type="scan" uid="1658">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -154,7 +154,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="orders" uid="1658">
+                <instance type="orders" uid="1659">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -198,7 +198,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="cursor" uid="1659">
+                <instance type="cursor" uid="1660">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -220,7 +220,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="digital" uid="1660">
+                <instance type="digital" uid="1738">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

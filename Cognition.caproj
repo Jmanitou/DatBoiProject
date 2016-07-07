@@ -797,14 +797,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="725909012566786">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9737363067240109" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="TiledBackground" sid="1250415848862425">
             <plugin id="TiledBg" />
             <texture original-source="D:\DatBoiProject\DownloadedFiles\ConcreteFLoor.jpg" />
@@ -845,9 +837,9 @@
         <event-sheet>Level Select Events.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="1838" />
-        <global-instance type="Keyboard" uid="1839" />
-        <global-instance type="Audio" uid="1840">
+        <global-instance type="Mouse" uid="1839" />
+        <global-instance type="Keyboard" uid="1840" />
+        <global-instance type="Audio" uid="1841">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
