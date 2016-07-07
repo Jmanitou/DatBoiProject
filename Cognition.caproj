@@ -827,6 +827,57 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite" sid="5938731698396127">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="590118698475571" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\Art\credits.png">
+                        <collision-poly>
+                            <point x="0.0512821" y="0.153846" />
+                            <point x="0.5" y="0.0769231" />
+                            <point x="0.948718" y="0.153846" />
+                            <point x="0.987179" y="0.5" />
+                            <point x="0.961538" y="0.884615" />
+                            <point x="0.5" y="0.961538" />
+                            <point x="0.0384615" y="0.884615" />
+                            <point x="0.0128205" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="blackback2" sid="4858822412200906">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8884297808333554" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Credits" sid="3182550658472991">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="CompanyName" sid="7671014845328052">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Gametitle" sid="7659568795279551">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite2" sid="5805219697852197">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2838897317361903" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.22" y="0.212" />
+                            <point x="0.484" y="0.216" />
+                            <point x="0.5" y="0.376" />
+                            <point x="0.208" y="0.396" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -837,6 +888,7 @@
         <layout>Level 3.xml</layout>
         <layout>WakeUp.xml</layout>
         <layout>Level Select.xml</layout>
+        <layout>Credits.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Start Menu Events.xml</event-sheet>
@@ -846,6 +898,7 @@
         <event-sheet>Level 3 Events.xml</event-sheet>
         <event-sheet>WakeUp Events.xml</event-sheet>
         <event-sheet>Level Select Events.xml</event-sheet>
+        <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="1839" />
