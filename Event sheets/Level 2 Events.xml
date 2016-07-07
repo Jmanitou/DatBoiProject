@@ -279,5 +279,18 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <comment>Portal</comment>
+        <event-block sid="7126729456049952">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2758148274404645" type="soldier">
+                    <param id="0" name="Object">teleporter</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="2150831443177029" type="System">
+                    <param id="0" name="Layout">Level 3</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
