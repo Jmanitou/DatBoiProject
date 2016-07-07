@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Level Select Events</name>
@@ -9,7 +9,7 @@
                 <condition id="6" name="On object clicked" sid="7634507867453514" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">lvl1</param>
+                    <param id="2" name="Object clicked">level1decal</param>
                 </condition>
             </conditions>
             <actions>
@@ -23,7 +23,7 @@
                 <condition id="6" name="On object clicked" sid="3264854506924552" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">lvl2</param>
+                    <param id="2" name="Object clicked">Sprite2</param>
                 </condition>
             </conditions>
             <actions>
@@ -37,7 +37,7 @@
                 <condition id="6" name="On object clicked" sid="3952328743015781" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">lvl3</param>
+                    <param id="2" name="Object clicked">Sprite3</param>
                 </condition>
             </conditions>
             <actions>

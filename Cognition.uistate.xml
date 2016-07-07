@@ -12,11 +12,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Start Menu</layout>
         <layout order="2">Story</layout>
-        <layout order="4">Level 1</layout>
+        <layout active="1" order="4">Level 1</layout>
         <layout order="6">Level 2</layout>
         <layout order="8">Level 3</layout>
         <layout order="10">WakeUp</layout>
-        <layout active="1" order="12">Level Select</layout>
+        <layout order="12">Level Select</layout>
         <event-sheet order="1">Start Menu Events</event-sheet>
         <event-sheet order="3">Story Events</event-sheet>
         <event-sheet order="5">Level 1 Events</event-sheet>
@@ -86,5 +86,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/level1decal/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
     </folders-expanded>
 </c2uistate>

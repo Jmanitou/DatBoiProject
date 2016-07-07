@@ -719,7 +719,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-<<<<<<< HEAD
         <object-type name="Sprite2" sid="4161102788153139">
             <plugin id="Sprite" />
             <animation-folder>
@@ -742,10 +741,50 @@
                     <frame duration="1" hotspotX="0.582353" hotspotY="-0.0571429" />
                 </animation>
             </animation-folder>
-=======
-        <object-type name="lvl3" sid="9409172316976573">
-            <plugin id="Text" />
->>>>>>> 3580db896c5edd59136c8e5666afaad029714c21
+        </object-type>
+        <object-type name="Sprite4" sid="1351647101395906">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5362000078059787" speed="5">
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.511111" original-source="D:\FinalProjectCon\DatBoiProject\enemy.png">
+                        <collision-poly>
+                            <point x="0.275862" y="0.177778" />
+                            <point x="0.482759" y="0.266667" />
+                            <point x="0.551724" y="0.288889" />
+                            <point x="0.37931" y="0.488889" />
+                            <point x="0.37931" y="0.6" />
+                            <point x="0.482759" y="0.444444" />
+                            <point x="0.137931" y="0.911111" />
+                            <point x="0.137931" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="0" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="329062665082601" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="D:\FinalProjectCon\DatBoiProject\walk 2.png">
+                        <collision-poly>
+                            <point x="0.230769" y="0.133333" />
+                            <point x="0.5" y="0.288889" />
+                            <point x="0.5" y="0.288889" />
+                            <point x="1" y="0.488889" />
+                            <point x="0.538462" y="0.733333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0384615" y="0.977778" />
+                            <point x="0.115385" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.511111" original-source="D:\FinalProjectCon\DatBoiProject\enemy.png" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.5" original-source="D:\FinalProjectCon\DatBoiProject\walk3.png" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.511111" original-source="D:\FinalProjectCon\DatBoiProject\enemy.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="6495771685003713">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6075761043618613" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
@@ -768,9 +807,9 @@
         <event-sheet>Level Select Events.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="1658" />
-        <global-instance type="Keyboard" uid="1659" />
-        <global-instance type="Audio" uid="1660">
+        <global-instance type="Mouse" uid="1838" />
+        <global-instance type="Keyboard" uid="1839" />
+        <global-instance type="Audio" uid="1840">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
