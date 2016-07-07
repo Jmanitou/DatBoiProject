@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Start Menu</layout>
+        <layout order="2">Story</layout>
+        <layout order="4">Level 1</layout>
+        <layout order="6">Level 2</layout>
+        <layout order="8">Level 3</layout>
+        <layout order="10">WakeUp</layout>
+        <layout order="12">Level Select</layout>
+        <event-sheet order="1">Start Menu Events</event-sheet>
+        <event-sheet active="1" order="3">Story Events</event-sheet>
+        <event-sheet order="5">Level 1 Events</event-sheet>
+        <event-sheet order="7">Level 2 Events</event-sheet>
+        <event-sheet order="9">Level 3 Events</event-sheet>
+        <event-sheet order="11">WakeUp Events</event-sheet>
+        <event-sheet order="13">Level Select Events</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/wall/" />
+        <folder expanded="1" path="animation-folder/concrete/" />
+        <folder expanded="1" path="animation-folder/freeText/" />
+        <folder expanded="1" path="animation-folder/yourText/" />
+        <folder expanded="1" path="animation-folder/selfText/" />
+        <folder expanded="1" path="animation-folder/startButton/" />
+        <folder expanded="1" path="animation-folder/storyButton/" />
+        <folder expanded="1" path="animation-folder/titleBar/" />
+        <folder expanded="1" path="animation-folder/soldier/" />
+        <folder expanded="1" path="animation-folder/cursor/" />
+        <folder expanded="1" path="animation-folder/story/" />
+        <folder expanded="1" path="animation-folder/cry/" />
+        <folder expanded="1" path="animation-folder/soldierDecal/" />
+        <folder expanded="1" path="animation-folder/crate/" />
+        <folder expanded="1" path="animation-folder/anarchyDecal/" />
+        <folder expanded="1" path="animation-folder/circleDecal/" />
+        <folder expanded="1" path="animation-folder/bloodDecal1/" />
+        <folder expanded="1" path="animation-folder/matelBox/" />
+        <folder expanded="1" path="animation-folder/scDecal/" />
+        <folder expanded="1" path="animation-folder/reDecal/" />
+        <folder expanded="1" path="animation-folder/amDecal/" />
+        <folder expanded="1" path="animation-folder/gore/" />
+        <folder expanded="1" path="animation-folder/chain/" />
+        <folder expanded="1" path="animation-folder/spike/" />
+        <folder expanded="1" path="animation-folder/cell/" />
+        <folder expanded="1" path="animation-folder/lever/" />
+        <folder expanded="1" path="animation-folder/mirror/" />
+        <folder expanded="1" path="animation-folder/mirror2/" />
+        <folder expanded="1" path="animation-folder/reciever/" />
+        <folder expanded="1" path="animation-folder/metalDoor/" />
+        <folder expanded="1" path="animation-folder/laser/" />
+        <folder expanded="1" path="animation-folder/caveBackground/" />
+        <folder expanded="1" path="animation-folder/chainLink/" />
+        <folder expanded="1" path="animation-folder/teleporter/" />
+        <folder expanded="1" path="animation-folder/blackBack/" />
+        <folder expanded="1" path="animation-folder/taskBar/" />
+        <folder expanded="1" path="animation-folder/loading/" />
+        <folder expanded="1" path="animation-folder/scan/" />
+        <folder expanded="1" path="animation-folder/orders/" />
+        <folder expanded="1" path="animation-folder/transmission/" />
+        <folder expanded="1" path="animation-folder/digital/" />
+        <folder expanded="1" path="animation-folder/pressurePlate/" />
+        <folder expanded="1" path="animation-folder/backButton/" />
+        <folder expanded="1" path="animation-folder/level1decal/" />
+        <folder expanded="1" path="animation-folder/level2decal/" />
+        <folder expanded="1" path="animation-folder/level3decal/" />
+        <folder expanded="1" path="animation-folder/heartDecal/" />
+        <folder expanded="1" path="animation-folder/bullet/" />
+        <folder expanded="1" path="animation-folder/bridge/" />
+        <folder expanded="1" path="animation-folder/spike2/" />
+    </folders-expanded>
+</c2uistate>
