@@ -816,6 +816,14 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="brickWall2" sid="2165671579011211">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3566245985475589" speed="5">
+                    <frame duration="1" hotspotX="0.501767" hotspotY="0.5" original-source="D:\DatBoiProject\DownloadedFiles\BrickWall.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
