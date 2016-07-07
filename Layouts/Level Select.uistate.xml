@@ -8,7 +8,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <position-y>240</position-y>
         <position-z>82.6446</position-z>
         <lookat-x>427</lookat-x>
-        <lookat-y>165</lookat-y>
+        <lookat-y>240</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>1</snap-to-grid>
