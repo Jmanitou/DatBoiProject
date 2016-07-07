@@ -719,7 +719,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="4161102788153139">
+        <object-type name="level2decal" sid="4161102788153139">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5467864885318705" speed="5">
@@ -734,7 +734,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite3" sid="7236070023309286">
+        <object-type name="level3decal" sid="7236070023309286">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7461299064055799" speed="5">
@@ -763,9 +763,9 @@
         <event-sheet>Level Select Events.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="1658" />
-        <global-instance type="Keyboard" uid="1659" />
-        <global-instance type="Audio" uid="1660">
+        <global-instance type="Mouse" uid="1838" />
+        <global-instance type="Keyboard" uid="1839" />
+        <global-instance type="Audio" uid="1840">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
