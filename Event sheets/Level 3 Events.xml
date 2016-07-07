@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Level 3 Events</name>
+    <events>
+        <comment>Movement</comment>
+        <event-block sid="1362543239175387">
+            <conditions>
+                <condition id="2" name="Key is down" sid="2520916584266912" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="9261888064911891" type="soldier">
+                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="4743419471634226" type="soldier">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2972726286260974">
+            <conditions>
+                <condition id="2" name="Key is down" sid="2594820858546427" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8079612868486857" type="soldier">
+                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="9090031086410458" type="soldier">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5751497322186945">
+            <conditions>
+                <condition id="2" name="Key is down" sid="8588214474289451" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="9713377767305544" type="soldier">
+                    <param id="0" name="Animation">&quot;Jumping&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="7114361325414657">
+            <conditions>
+                <condition id="3" name="On key released" sid="9788158177895555" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+                <condition id="3" name="On key released" sid="8078695018460936" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5452958035253574" type="soldier">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="827630586341941">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="8726016980484657" type="soldier" />
+                <condition id="2" name="Is playing" sid="6535337018864486" type="soldier">
+                    <param id="0" name="Animation">&quot;Jumping&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8816589569058605" type="soldier">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
