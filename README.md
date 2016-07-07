@@ -1,2 +1,0 @@
-# DatBoiProject
-Marist Final Project
