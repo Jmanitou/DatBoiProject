@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>Cognition</name>
     <description></description>
@@ -180,19 +180,20 @@
                     <frame duration="1" hotspotX="0.518519" hotspotY="0.510638" original-source="D:\DatBoiProject\Art\Player Main\new walk.png">
                         <image-point name="Imagepoint 1" x="1" y="0.382979" />
                         <collision-poly>
-                            <point x="0.2" y="0.00543478" />
-                            <point x="0.58" y="0.0652174" />
-                            <point x="0.64" y="0.972826" />
+                            <point x="0.172222" y="0" />
+                            <point x="0.487407" y="0.0705365" />
+                            <point x="0.593704" y="0.988784" />
                             <point x="0.02" y="0.967391" />
                         </collision-poly>
                     </frame>
                 </animation>
                 <animation framecount="2" loop="0" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="3250741893887487" speed="5">
                     <frame duration="1" hotspotX="0.518519" hotspotY="0.510638" original-source="D:\DatBoiProject\Art\Player Main\new walk.png">
+                        <image-point name="Imagepoint 1" x="0.925926" y="0.382979" />
                         <collision-poly>
-                            <point x="0.166667" y="0" />
+                            <point x="0.185186" y="0.00531915" />
                             <point x="0.481481" y="0.0638298" />
-                            <point x="0.518519" y="0.276596" />
+                            <point x="0.490741" y="0.271277" />
                             <point x="0.407407" y="0.489362" />
                             <point x="0.518519" y="0.723404" />
                             <point x="0.601852" y="0.989362" />
@@ -201,22 +202,43 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.518519" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\stand.png">
+                        <image-point name="Imagepoint 1" x="0.962963" y="0.369565" />
                         <collision-poly>
                             <point x="0.143518" y="0" />
                             <point x="0.560185" y="0.0652174" />
                             <point x="0.361111" y="0.997283" />
-                            <point x="0.143519" y="1" />
+                            <point x="0.125" y="0.994565" />
                         </collision-poly>
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="Jumping" pingpong="0" repeatcount="1" repeatto="0" sid="6304464623297113" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Player Main\jumpmanjumpmanthemboisuptosomthin.png">
                         <image-point name="Imagepoint 1" x="0.966667" y="0.333333" />
+                        <collision-poly>
+                            <point x="0.291667" y="0.0185185" />
+                            <point x="0.541667" y="0.0509259" />
+                            <point x="0.475" y="0.819445" />
+                            <point x="0.108333" y="0.949074" />
+                        </collision-poly>
                     </frame>
                 </animation>
                 <animation framecount="2" loop="0" name="Melee" pingpong="0" repeatcount="1" repeatto="0" sid="1986268626571169" speed="5">
-                    <frame duration="1" hotspotX="0.517241" hotspotY="0.509804" original-source="D:\DatBoiProject\Art\Player Main\brandish.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\DatBoiProject\Art\Player Main\slash.png" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.509804" original-source="D:\DatBoiProject\Art\Player Main\brandish.png">
+                        <collision-poly>
+                            <point x="0.12931" y="0.0147059" />
+                            <point x="0.594828" y="0.171569" />
+                            <point x="0.62931" y="0.872549" />
+                            <point x="0.12931" y="0.955882" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\DatBoiProject\Art\Player Main\slash.png">
+                        <collision-poly>
+                            <point x="0.369318" y="0.0487805" />
+                            <point x="0.943182" y="0.0609756" />
+                            <point x="0.392046" y="0.878049" />
+                            <point x="0.0454545" y="0.97561" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
