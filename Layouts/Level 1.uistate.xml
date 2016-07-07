@@ -12,11 +12,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <lookat-y>747.111</lookat-y>
 =======
         <position-x>2000</position-x>
-        <position-y>1216.1</position-y>
+        <position-y>992.126</position-y>
         <position-z>285.312</position-z>
         <lookat-x>2000</lookat-x>
+<<<<<<< HEAD
         <lookat-y>1216.1</lookat-y>
 >>>>>>> 6f6481e9a15c52fe58c8c992973dc252d5d9d8b9
+=======
+        <lookat-y>992.126</lookat-y>
+>>>>>>> 8d5e20804875e19c2789b712182aceb9dc66cd39
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>1</snap-to-grid>
