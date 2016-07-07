@@ -719,7 +719,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-<<<<<<< HEAD
         <object-type name="Sprite2" sid="4161102788153139">
             <plugin id="Sprite" />
             <animation-folder>
@@ -742,10 +741,6 @@
                     <frame duration="1" hotspotX="0.582353" hotspotY="-0.0571429" />
                 </animation>
             </animation-folder>
-=======
-        <object-type name="lvl3" sid="9409172316976573">
-            <plugin id="Text" />
->>>>>>> 3580db896c5edd59136c8e5666afaad029714c21
         </object-type>
     </object-folder>
     <families />
