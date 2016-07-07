@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>Cognition</name>
     <description></description>
@@ -681,14 +681,44 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="lvl1" sid="5423701746677656">
-            <plugin id="Text" />
+        <object-type name="Sprite" sid="8677079518936367">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6811304124146524" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
-        <object-type name="lvl2" sid="5697380938101923">
-            <plugin id="Text" />
+        <object-type name="level1decal" sid="3085348925351736">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4793915096883651" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="D:\DatBoiProject\Art\level1 decal.png" />
+                </animation>
+            </animation-folder>
         </object-type>
-        <object-type name="Text" sid="9409172316976573">
-            <plugin id="Text" />
+        <object-type name="Sprite2" sid="4161102788153139">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5467864885318705" speed="5">
+                    <frame duration="1" hotspotX="0.555556" hotspotY="0.415929">
+                        <collision-poly>
+                            <point x="0.0760234" y="0.247788" />
+                            <point x="0.935673" y="0.265487" />
+                            <point x="0.959064" y="0.734513" />
+                            <point x="0.0760234" y="0.761062" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="7236070023309286">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7461299064055799" speed="5">
+                    <frame duration="1" hotspotX="0.582353" hotspotY="-0.0571429" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

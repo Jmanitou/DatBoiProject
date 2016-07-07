@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2uistate>
     <!--This is a UI state file - its content describes the user interface settings when the project was last open.
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
@@ -15,7 +15,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="4">Level 1</layout>
         <layout order="6">Level 2</layout>
         <layout order="8">Level 3</layout>
-        <layout active="1" order="10">WakeUp</layout>
+        <layout order="10">WakeUp</layout>
+        <layout active="1" order="12">Level Select</layout>
         <event-sheet order="1">Start Menu Events</event-sheet>
         <event-sheet order="3">Story Events</event-sheet>
         <event-sheet order="5">Level 1 Events</event-sheet>
@@ -80,5 +81,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/transmission/" />
         <folder expanded="1" path="animation-folder/digital/" />
         <folder expanded="1" path="animation-folder/pressurePlate/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/level1decal/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
     </folders-expanded>
 </c2uistate>
