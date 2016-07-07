@@ -18,5 +18,19 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="368216393090064">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="7416314918864897" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">backButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7137797680651317" type="System">
+                    <param id="0" name="Layout">Start Menu</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
