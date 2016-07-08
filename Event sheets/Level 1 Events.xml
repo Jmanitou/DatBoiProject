@@ -221,6 +221,9 @@
                 <condition id="0" name="On collision with another object" sid="6425643885333625" type="soldier">
                     <param id="0" name="Object">teleporter</param>
                 </condition>
+                <condition id="2" name="Is playing" sid="9824893528989098" type="teleporter">
+                    <param id="0" name="Animation">&quot;On&quot;</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="9225799130157673" type="System">
@@ -296,6 +299,33 @@
             </conditions>
             <actions>
                 <action id="-12" name="Subtract from" sid="483817419666007" type="soldier">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="517853644149448">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="3638639477289914" type="bossRage" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2696983096993385" type="teleporter">
+                    <param id="0" name="Animation">&quot;On&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3296241223436701">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="495912732540611" type="soldier">
+                    <param id="0" name="Object">enemy</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="1928418204213165" type="soldier">
+                    <param id="0" name="Animation">&quot;Melee&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="7781235051243555" type="enemy">
                     <param id="0" name="Instance variable">Health</param>
                     <param id="1" name="Value">10</param>
                 </action>
