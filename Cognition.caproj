@@ -913,7 +913,7 @@
         <object-type name="bossFear" sid="9578344134269916">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8223401046622909" speed="5">
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8223401046622909" speed="5">
                     <frame duration="1" hotspotX="0.508772" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Bosses\Fear\fear boss.png">
                         <collision-poly>
                             <point x="0.157895" y="0.18" />
