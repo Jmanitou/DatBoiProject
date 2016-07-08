@@ -3,766 +3,489 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Level 2 Events</name>
     <events>
+        <include>Similar Events</include>
         <variable constant="0" name="DistancetoBoos" sid="8680778227555951" static="0" type="number">0</variable>
         <variable constant="0" name="enemies_destroyed" sid="5467814933068063" static="0" type="number">0</variable>
-        <comment>Music</comment>
-        <event-block sid="5094290347891068">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="8607379491215518" type="System" />
-            </conditions>
-            <actions>
-                <action id="6" name="Stop" sid="367911349633348" type="Audio">
-                    <param id="0" name="Tag">&quot;&quot;</param>
-                </action>
-                <action id="0" name="Play" sid="3294206925982853" type="Audio">
-                    <param id="0" name="Audio file">level2Music</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="7212048129424911" type="soldier">
-                    <param id="0" name="Instance variable">Melee</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="3715397480845764" type="soldier">
-                    <param id="0" name="Instance variable">Jump</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="5683690317497752" type="pressurePlate">
-                    <param id="0" name="Instance variable">pressed</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-                <action id="-9" name="Set value" sid="3036064914875708" type="System">
-                    <param id="0" name="Variable">enemies_destroyed</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="7324641483453427">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="5932424781046826" type="soldier">
-                    <param id="0" name="Object">spike</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action disabled="1" id="-1" name="Set X" sid="1547992556374199" type="soldier">
-                    <param id="0" name="X">210</param>
-                </action>
-                <action disabled="1" id="-2" name="Set Y" sid="8226826465712444" type="soldier">
-                    <param id="0" name="Y">175</param>
-                </action>
-                <action id="-26" name="Restart layout" sid="4441950211744307" type="System" />
-            </actions>
+        <event-group description="" sid="2055763152576733" title="Start3">
             <sub-events>
-                <event-block sid="77919617452309">
+                <event-block sid="5094290347891068">
                     <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="9661178399977778" type="concrete">
-                            <param id="0" name="Unique ID">984</param>
-                        </condition>
+                        <condition id="-2" name="On start of layout" sid="8607379491215518" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-1" name="Set X" sid="2397503730715619" type="concrete">
-                            <param id="0" name="X">1435</param>
+                        <action id="6" name="Stop" sid="367911349633348" type="Audio">
+                            <param id="0" name="Tag">&quot;&quot;</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="5139583448332407" type="concrete">
-                            <param id="0" name="Y">0</param>
+                        <action id="0" name="Play" sid="3294206925982853" type="Audio">
+                            <param id="0" name="Audio file">level2Music</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
-                    </actions>
-                </event-block>
-                <event-block sid="7929429823590737">
-                    <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="3515872875579944" type="concrete">
-                            <param id="0" name="Unique ID">985</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="5344952362488584" type="concrete">
-                            <param id="0" name="X">1435</param>
+                        <action id="-13" name="Set boolean" sid="7212048129424911" type="soldier">
+                            <param id="0" name="Instance variable">Melee</param>
+                            <param id="1" name="Value">0</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="406252676998499" type="concrete">
-                            <param id="0" name="Y">0</param>
+                        <action id="-13" name="Set boolean" sid="3715397480845764" type="soldier">
+                            <param id="0" name="Instance variable">Jump</param>
+                            <param id="1" name="Value">0</param>
                         </action>
-                    </actions>
-                </event-block>
-                <event-block sid="7210960078424569">
-                    <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="9023496493766776" type="concrete">
-                            <param id="0" name="Unique ID">986</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="7181481926587391" type="concrete">
-                            <param id="0" name="X">1435</param>
+                        <action id="-13" name="Set boolean" sid="5683690317497752" type="pressurePlate">
+                            <param id="0" name="Instance variable">pressed</param>
+                            <param id="1" name="Value">0</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="948045040208062" type="concrete">
-                            <param id="0" name="Y">0</param>
+                        <action id="-9" name="Set value" sid="3036064914875708" type="System">
+                            <param id="0" name="Variable">enemies_destroyed</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="7816067118414861" type="soldier">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Value">100</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="2244377825228082">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="7910460103139644" type="soldier">
-                    <param id="0" name="Object">spike2</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action disabled="1" id="-1" name="Set X" sid="5107487658436185" type="soldier">
-                    <param id="0" name="X">210</param>
-                </action>
-                <action disabled="1" id="-2" name="Set Y" sid="5933162128790334" type="soldier">
-                    <param id="0" name="Y">175</param>
-                </action>
-                <action id="-26" name="Restart layout" sid="7998158873800544" type="System" />
-            </actions>
+        </event-group>
+        <event-group description="" sid="5844421020084726" title="Spikes">
             <sub-events>
-                <event-block sid="5939419696998353">
+                <comment>Had to find a way to put the blocks back from where they were</comment>
+                <event-block sid="7324641483453427">
                     <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="5014311460585944" type="concrete">
-                            <param id="0" name="Unique ID">984</param>
+                        <condition id="0" name="On collision with another object" sid="5932424781046826" type="soldier">
+                            <param id="0" name="Object">spike</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-1" name="Set X" sid="8855441085233641" type="concrete">
-                            <param id="0" name="X">1435</param>
-                        </action>
-                        <action id="-2" name="Set Y" sid="3413840560167787" type="concrete">
-                            <param id="0" name="Y">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="3926296557301236">
-                    <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="6674175858990625" type="concrete">
-                            <param id="0" name="Unique ID">985</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="4574722986553769" type="concrete">
-                            <param id="0" name="X">1435</param>
-                        </action>
-                        <action id="-2" name="Set Y" sid="1418604726107224" type="concrete">
-                            <param id="0" name="Y">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="1770359138471676">
-                    <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="8194759674050546" type="concrete">
-                            <param id="0" name="Unique ID">986</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="365537338974603" type="concrete">
-                            <param id="0" name="X">1435</param>
-                        </action>
-                        <action id="-2" name="Set Y" sid="220143512655667" type="concrete">
-                            <param id="0" name="Y">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <comment>Pressure Plate</comment>
-        <event-block sid="7031429542162351">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="9317171419266118" type="pressurePlate">
-                    <param id="0" name="Object">soldier</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-13" name="Set boolean" sid="693994598203331" type="pressurePlate">
-                    <param id="0" name="Instance variable">pressed</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-            <sub-events>
-                <event-block sid="2057903618388227">
-                    <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="996598227060376" type="concrete">
-                            <param id="0" name="Unique ID">984</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="8347080900524965" type="concrete">
-                            <param id="0" name="X">1435</param>
-                        </action>
-                        <action id="-2" name="Set Y" sid="1355670754362209" type="concrete">
-                            <param id="0" name="Y">455</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="5998908173780622">
-                    <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="9083854449370353" type="concrete">
-                            <param id="0" name="Unique ID">985</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="5624859111172678" type="concrete">
-                            <param id="0" name="X">1435</param>
-                        </action>
-                        <action id="-2" name="Set Y" sid="8475089729748592" type="concrete">
-                            <param id="0" name="Y">525</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="973447480282978">
-                    <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="9744501607973869" type="concrete">
-                            <param id="0" name="Unique ID">986</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="4857071241032267" type="concrete">
-                            <param id="0" name="X">1435</param>
-                        </action>
-                        <action id="-2" name="Set Y" sid="3187653751504091" type="concrete">
-                            <param id="0" name="Y">595</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="6379064895591208">
-            <conditions>
-                <condition id="-8" name="Is boolean instance variable set" sid="8660604503917138" type="pressurePlate">
-                    <param id="0" name="Instance variable">pressed</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action disabled="1" id="-9" name="Destroy" sid="3728405398528295" type="pressurePlate" />
-                <action id="-3" name="Set position" sid="3549511256692678" type="pressurePlate">
-                    <param id="0" name="X">0</param>
-                    <param id="1" name="Y">0</param>
-                </action>
-            </actions>
-            <sub-events>
-                <event-block sid="5870416589298738">
-                    <conditions>
-                        <condition id="-6" name="Every X seconds" sid="9953663890850364" type="System">
-                            <param id="0" name="Interval (seconds)">0.90</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-2" name="Set Y" sid="683640747450552" type="spike2">
-                            <param id="0" name="Y">spike2.Y +50</param>
-                        </action>
+                        <action id="-26" name="Restart layout" sid="4441950211744307" type="System" />
                     </actions>
                     <sub-events>
-                        <event-block sid="9156150670470506">
+                        <event-block sid="77919617452309">
                             <conditions>
-                                <condition id="-14" name="Pick by unique ID" sid="3830272060786199" type="TiledBackground">
-                                    <param id="0" name="Unique ID">945</param>
+                                <condition id="-14" name="Pick by unique ID" sid="9661178399977778" type="concrete">
+                                    <param id="0" name="Unique ID">984</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-2" name="Set Y" sid="7814499622892995" type="TiledBackground">
-                                    <param id="0" name="Y">TiledBackground.Y +50</param>
+                                <action id="-3" name="Set position" sid="9503183906135008" type="concrete">
+                                    <param id="0" name="X">1435</param>
+                                    <param id="1" name="Y">0</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="2767390138868457">
+                        <event-block sid="7929429823590737">
                             <conditions>
-                                <condition id="-14" name="Pick by unique ID" sid="1539228833404498" type="TiledBackground">
-                                    <param id="0" name="Unique ID">946</param>
+                                <condition id="-14" name="Pick by unique ID" sid="3515872875579944" type="concrete">
+                                    <param id="0" name="Unique ID">985</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-2" name="Set Y" sid="2981100451736278" type="TiledBackground">
-                                    <param id="0" name="Y">TiledBackground.Y +50</param>
+                                <action id="-3" name="Set position" sid="1925671073303633" type="concrete">
+                                    <param id="0" name="X">1435</param>
+                                    <param id="1" name="Y">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="7210960078424569">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="9023496493766776" type="concrete">
+                                    <param id="0" name="Unique ID">986</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="9440001421989347" type="concrete">
+                                    <param id="0" name="X">1435</param>
+                                    <param id="1" name="Y">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="2244377825228082">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="7910460103139644" type="soldier">
+                            <param id="0" name="Object">spike2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="7998158873800544" type="System" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="5939419696998353">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="5014311460585944" type="concrete">
+                                    <param id="0" name="Unique ID">984</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="4472220464585783" type="concrete">
+                                    <param id="0" name="X">1435</param>
+                                    <param id="1" name="Y">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3926296557301236">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="6674175858990625" type="concrete">
+                                    <param id="0" name="Unique ID">985</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="9299877914523561" type="concrete">
+                                    <param id="0" name="X">1435</param>
+                                    <param id="1" name="Y">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1770359138471676">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="8194759674050546" type="concrete">
+                                    <param id="0" name="Unique ID">986</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="6492895956327694" type="concrete">
+                                    <param id="0" name="X">1435</param>
+                                    <param id="1" name="Y">0</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
-        </event-block>
-        <comment>Portal</comment>
-        <event-block sid="7126729456049952">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="2758148274404645" type="soldier">
-                    <param id="0" name="Object">teleporter</param>
-                </condition>
-                <condition id="2" name="Is playing" sid="7875519998450381" type="teleporter">
-                    <param id="0" name="Animation">&quot;On&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="2150831443177029" type="System">
-                    <param id="0" name="Layout">Level 3</param>
-                </action>
-            </actions>
-        </event-block>
-        <comment>Movement</comment>
-        <event-block sid="337175453317667">
-            <conditions>
-                <condition id="2" name="Key is down" sid="3828922475919979" type="Keyboard">
-                    <param id="0" name="Key">39 (Right arrow)</param>
-                </condition>
-                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="601917507782753" type="soldier">
-                    <param id="0" name="Instance variable">Melee</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="4374139482998185" type="soldier">
-                    <param id="0" name="Animation">&quot;Walking&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="7" name="Set mirrored" sid="4510570452780417" type="soldier">
-                    <param id="0" name="State">1</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="7183921624894968" type="soldier">
-                    <param id="0" name="Instance variable">Mirror</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="2424759333654501">
-            <conditions>
-                <condition id="2" name="Key is down" sid="7257480890343649" type="Keyboard">
-                    <param id="0" name="Key">37 (Left arrow)</param>
-                </condition>
-                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="5635458083755589" type="soldier">
-                    <param id="0" name="Instance variable">Melee</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="9523904757068389" type="soldier">
-                    <param id="0" name="Animation">&quot;Walking&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="7" name="Set mirrored" sid="1904476029561001" type="soldier">
-                    <param id="0" name="State">0</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="3519743372018168" type="soldier">
-                    <param id="0" name="Instance variable">Mirror</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="4708431988924357">
-            <conditions>
-                <condition id="2" name="Key is down" sid="2841245606943138" type="Keyboard">
-                    <param id="0" name="Key">38 (Up arrow)</param>
-                </condition>
-                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="6176794224761724" type="soldier">
-                    <param id="0" name="Instance variable">Melee</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="157746976018927" type="soldier">
-                    <param id="0" name="Animation">&quot;Jumping&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block any="1" sid="1501769206242612">
-            <conditions>
-                <condition id="3" name="On key released" sid="1984149121763564" type="Keyboard">
-                    <param id="0" name="Key">39 (Right arrow)</param>
-                </condition>
-                <condition id="3" name="On key released" sid="8022021312598326" type="Keyboard">
-                    <param id="0" name="Key">37 (Left arrow)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="99758606081356" type="soldier">
-                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="4831404416814515">
-            <conditions>
-                <condition behavior="Platform" id="9" name="On landed" sid="6004806333536594" type="soldier" />
-                <condition id="2" name="Is playing" sid="6744205447765957" type="soldier">
-                    <param id="0" name="Animation">&quot;Jumping&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="9786223573647454" type="soldier">
-                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="2713564631147087">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="5328464352473099" type="Keyboard">
-                    <param id="0" name="Key">88 (X)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Timer" id="0" name="Start timer" sid="6989041054788965" type="soldier">
-                    <param id="0" name="Duration">0.5</param>
-                    <param id="1" name="Type">1</param>
-                    <param id="2" name="Tag">&quot;shoot&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="8742917188153041">
-            <conditions>
-                <condition id="3" name="On key released" sid="6358723216401043" type="Keyboard">
-                    <param id="0" name="Key">88 (X)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Timer" id="1" name="Stop timer" sid="5418981638101764" type="soldier">
-                    <param id="0" name="Tag">&quot;shoot&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="6311778654874778">
-            <conditions>
-                <condition behavior="Timer" id="0" name="On timer" sid="1517297265862295" type="soldier">
-                    <param id="0" name="Tag">&quot;shoot&quot;</param>
-                </condition>
-            </conditions>
-            <actions />
+        </event-group>
+        <event-group description="" sid="5695242200859633" title="Pressure_Plate">
             <sub-events>
-                <event-block sid="9419902163853724">
+                <comment>When pressure plate is pressed, the spikes and blocks will come down</comment>
+                <event-block sid="7031429542162351">
                     <conditions>
-                        <condition id="-8" name="Is boolean instance variable set" sid="8826600334367808" type="soldier">
-                            <param id="0" name="Instance variable">Mirror</param>
+                        <condition id="0" name="On collision with another object" sid="9317171419266118" type="pressurePlate">
+                            <param id="0" name="Object">soldier</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Spawn another object" sid="2537642818825584" type="soldier">
-                            <param id="0" name="Object">bullet</param>
-                            <param id="1" name="Layer">1</param>
-                            <param id="2" name="Image point">1</param>
-                        </action>
-                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="3682526191793793" type="bullet">
-                            <param id="0" name="Angle">180</param>
+                        <action id="-13" name="Set boolean" sid="693994598203331" type="pressurePlate">
+                            <param id="0" name="Instance variable">pressed</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="2057903618388227">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="996598227060376" type="concrete">
+                                    <param id="0" name="Unique ID">984</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="8347080900524965" type="concrete">
+                                    <param id="0" name="X">1435</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="1355670754362209" type="concrete">
+                                    <param id="0" name="Y">455</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5998908173780622">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="9083854449370353" type="concrete">
+                                    <param id="0" name="Unique ID">985</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="5624859111172678" type="concrete">
+                                    <param id="0" name="X">1435</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="8475089729748592" type="concrete">
+                                    <param id="0" name="Y">525</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="973447480282978">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="9744501607973869" type="concrete">
+                                    <param id="0" name="Unique ID">986</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="4857071241032267" type="concrete">
+                                    <param id="0" name="X">1435</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="3187653751504091" type="concrete">
+                                    <param id="0" name="Y">595</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
-                <event-block sid="2337734805374382">
+                <event-block sid="6379064895591208">
                     <conditions>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="259817456696421" type="soldier">
-                            <param id="0" name="Instance variable">Mirror</param>
+                        <condition id="-8" name="Is boolean instance variable set" sid="8660604503917138" type="pressurePlate">
+                            <param id="0" name="Instance variable">pressed</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Spawn another object" sid="6403387434369557" type="soldier">
-                            <param id="0" name="Object">bullet</param>
-                            <param id="1" name="Layer">1</param>
-                            <param id="2" name="Image point">1</param>
-                        </action>
-                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="4299707945656007" type="bullet">
-                            <param id="0" name="Angle">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <comment>Melee</comment>
-        <event-block sid="1350864718484509">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="680283305585213" type="Keyboard">
-                    <param id="0" name="Key">90 (Z)</param>
-                </condition>
-                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="8347255258239456" type="soldier">
-                    <param id="0" name="Instance variable">Melee</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-13" name="Set boolean" sid="1223054579205209" type="soldier">
-                    <param id="0" name="Instance variable">Melee</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="4" name="Set animation" sid="3243025639628288" type="soldier">
-                    <param id="0" name="Animation">&quot;Melee&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="-16" name="Wait" sid="3512598997184311" type="System">
-                    <param id="0" name="Seconds">1.0</param>
-                </action>
-                <action id="4" name="Set animation" sid="5550609900595031" type="soldier">
-                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="7996336691025445" type="soldier">
-                    <param id="0" name="Instance variable">Melee</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <comment>Health</comment>
-        <event-block sid="6075523194604018">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="3675771862073784" type="soldier">
-                    <param id="0" name="Instance variable">Health</param>
-                    <param id="1" name="Comparison">3</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-26" name="Restart layout" sid="5746913830645135" type="System" />
-            </actions>
-        </event-block>
-        <event-block sid="1170237245213687">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="8976261308003073" type="enemy">
-                    <param id="0" name="Instance variable">Health</param>
-                    <param id="1" name="Comparison">3</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="9689909653251089" type="enemy" />
-            </actions>
-        </event-block>
-        <event-block sid="3262346130929537">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="5535074239477861" type="enemy">
-                    <param id="0" name="Object">bullet</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-12" name="Subtract from" sid="7215245235728643" type="enemy">
-                    <param id="0" name="Instance variable">Health</param>
-                    <param id="1" name="Value">20</param>
-                </action>
-                <action id="-9" name="Destroy" sid="5301430350811676" type="bullet" />
-            </actions>
-        </event-block>
-        <event-block sid="9069430977452635">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="4777895351028043" type="bullet">
-                    <param id="0" name="Object">crate</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="1614254332658904" type="bullet" />
-            </actions>
-        </event-block>
-        <event-block sid="8111057069157519">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="6386079961059941" type="bullet">
-                    <param id="0" name="Object">concrete</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="176368637682689" type="bullet" />
-            </actions>
-        </event-block>
-        <comment>Enemies</comment>
-        <event-block sid="5295409243798121">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="8791588722796063" type="soldier">
-                    <param id="0" name="Object">enemy</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-12" name="Subtract from" sid="9428389695406601" type="soldier">
-                    <param id="0" name="Instance variable">Health</param>
-                    <param id="1" name="Value">10</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="1176209694255077">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="714701746883675" type="bossFear">
-                    <param id="0" name="Instance variable">Health</param>
-                    <param id="1" name="Comparison">3</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="2683809061493275" type="teleporter">
-                    <param id="0" name="Animation">&quot;On&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="-9" name="Destroy" sid="735495458633263" type="bossFear" />
-            </actions>
-        </event-block>
-        <event-block sid="2105072295485951">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="7784834473911204" type="bullet">
-                    <param id="0" name="Object">bossFear</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-12" name="Subtract from" sid="6094447216336808" type="bossFear">
-                    <param id="0" name="Instance variable">Health</param>
-                    <param id="1" name="Value">20</param>
-                </action>
-                <action id="-9" name="Destroy" sid="2176139134616535" type="bullet" />
-            </actions>
-        </event-block>
-        <event-block sid="1643688613045783">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="3217267190279547" type="soldier">
-                    <param id="0" name="Object">enemy</param>
-                </condition>
-                <condition id="2" name="Is playing" sid="5227968471045498" type="soldier">
-                    <param id="0" name="Animation">&quot;Melee&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-12" name="Subtract from" sid="4384194330591202" type="enemy">
-                    <param id="0" name="Instance variable">Health</param>
-                    <param id="1" name="Value">20</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="5782604950217593">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="6074483897537759" type="System">
-                    <param id="0" name="Interval (seconds)">0.1</param>
-                </condition>
-                <condition id="-3" name="Is on-screen" sid="7190639766464853" type="bossFear" />
-            </conditions>
-            <actions>
-                <action behavior="Pathfinding" id="0" name="Find path" sid="1075596599150336" type="bossFear">
-                    <param id="0" name="X">soldier.X</param>
-                    <param id="1" name="Y">soldier.Y</param>
-                </action>
-                <action id="-9" name="Set value" sid="1910124425754104" type="System">
-                    <param id="0" name="Variable">DistancetoBoss</param>
-                    <param id="1" name="Value">bossFear.X - soldier.X</param>
-                </action>
-            </actions>
-            <sub-events>
-                <event-block sid="8242321675077346">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="874565397046558" type="System">
-                            <param id="0" name="Variable">DistancetoBoss</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="7" name="Set mirrored" sid="744405194952886" type="bossFear">
-                            <param id="0" name="State">1</param>
+                        <action disabled="1" id="-9" name="Destroy" sid="3728405398528295" type="pressurePlate" />
+                        <action id="-3" name="Set position" sid="3549511256692678" type="pressurePlate">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">0</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="5870416589298738">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="9953663890850364" type="System">
+                                    <param id="0" name="Interval (seconds)">0.90</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Set Y" sid="683640747450552" type="spike2">
+                                    <param id="0" name="Y">spike2.Y +50</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="9156150670470506">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="3830272060786199" type="TiledBackground">
+                                            <param id="0" name="Unique ID">945</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Set Y" sid="7814499622892995" type="TiledBackground">
+                                            <param id="0" name="Y">TiledBackground.Y +50</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="2767390138868457">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="1539228833404498" type="TiledBackground">
+                                            <param id="0" name="Unique ID">946</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Set Y" sid="2981100451736278" type="TiledBackground">
+                                            <param id="0" name="Y">TiledBackground.Y +50</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
-                <event-block sid="9843204951946571">
+                <comment>When 2 enemies die the spikes will stop and the blocks will allow you to pass</comment>
+                <event-block sid="2096634050095137">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="3987966903282694" type="System">
-                            <param id="0" name="Variable">DistancetoBoss</param>
-                            <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Value">0</param>
+                        <condition id="-19" name="On destroyed" sid="682230085025347" type="enemy" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="9987795972460952">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="5914781309893058" type="enemy">
+                                    <param id="0" name="Unique ID">1003</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="1253661371215231" type="System">
+                                    <param id="0" name="Variable">enemies_destroyed</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6291581355627258">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="9560145579597853" type="enemy">
+                                    <param id="0" name="Unique ID">1004</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="5194583786112466" type="System">
+                                    <param id="0" name="Variable">enemies_destroyed</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="633796083285095">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="3880711106307612" type="System">
+                            <param id="0" name="Variable">enemies_destroyed</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="7" name="Set mirrored" sid="6651952644133314" type="bossFear">
+                        <action id="-13" name="Set boolean" sid="5113183069672632" type="pressurePlate">
+                            <param id="0" name="Instance variable">pressed</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="3949803497525484" type="metalDoor">
                             <param id="0" name="State">0</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="2096634050095137">
-            <conditions>
-                <condition id="-19" name="On destroyed" sid="682230085025347" type="enemy" />
-            </conditions>
-            <actions />
+        </event-group>
+        <event-group description="" sid="7345576450740109" title="Boss2">
             <sub-events>
-                <event-block sid="9987795972460952">
+                <event-block sid="1176209694255077">
                     <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="5914781309893058" type="enemy">
-                            <param id="0" name="Unique ID">1003</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Add to" sid="1253661371215231" type="System">
-                            <param id="0" name="Variable">enemies_destroyed</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="6291581355627258">
-                    <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="9560145579597853" type="enemy">
-                            <param id="0" name="Unique ID">1004</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Add to" sid="5194583786112466" type="System">
-                            <param id="0" name="Variable">enemies_destroyed</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="615121557204076">
-            <conditions>
-                <condition behavior="Pathfinding" id="0" name="On path found" sid="5432465779746766" type="bossFear" />
-            </conditions>
-            <actions>
-                <action behavior="Pathfinding" id="1" name="Move along path" sid="2075917652606199" type="bossFear" />
-            </actions>
-        </event-block>
-        <event-block sid="7220739410646995">
-            <conditions>
-                <condition id="1" name="Is overlapping another object" sid="5727931687362508" type="bossFear">
-                    <param id="0" name="Object">soldier</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="1663401918344332">
-                    <conditions>
-                        <condition id="-6" name="Every X seconds" sid="55893163927542" type="System">
-                            <param id="0" name="Interval (seconds)">1.0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-12" name="Subtract from" sid="6615056493049017" type="soldier">
+                        <condition id="-7" name="Compare instance variable" sid="714701746883675" type="bossFear">
                             <param id="0" name="Instance variable">Health</param>
-                            <param id="1" name="Value">15</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="2683809061493275" type="teleporter">
+                            <param id="0" name="Animation">&quot;On&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="735495458633263" type="bossFear" />
+                    </actions>
+                </event-block>
+                <event-block sid="2105072295485951">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="7784834473911204" type="bullet">
+                            <param id="0" name="Object">bossFear</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="6094447216336808" type="bossFear">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Value">20</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="2176139134616535" type="bullet" />
+                    </actions>
+                </event-block>
+                <comment>Found out how to make it follow the player</comment>
+                <event-block sid="5782604950217593">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="6074483897537759" type="System">
+                            <param id="0" name="Interval (seconds)">0.1</param>
+                        </condition>
+                        <condition id="-3" name="Is on-screen" sid="7190639766464853" type="bossFear" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="1075596599150336" type="bossFear">
+                            <param id="0" name="X">soldier.X</param>
+                            <param id="1" name="Y">soldier.Y</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1910124425754104" type="System">
+                            <param id="0" name="Variable">DistancetoBoss</param>
+                            <param id="1" name="Value">bossFear.X - soldier.X</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="8242321675077346">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="874565397046558" type="System">
+                                    <param id="0" name="Variable">DistancetoBoss</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="744405194952886" type="bossFear">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9843204951946571">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="3987966903282694" type="System">
+                                    <param id="0" name="Variable">DistancetoBoss</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="6651952644133314" type="bossFear">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="615121557204076">
+                    <conditions>
+                        <condition behavior="Pathfinding" id="0" name="On path found" sid="5432465779746766" type="bossFear" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="1" name="Move along path" sid="2075917652606199" type="bossFear" />
+                    </actions>
+                </event-block>
+                <event-block sid="7220739410646995">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="5727931687362508" type="bossFear">
+                            <param id="0" name="Object">soldier</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="1663401918344332">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="55893163927542" type="System">
+                                    <param id="0" name="Interval (seconds)">1.0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="6615056493049017" type="soldier">
+                                    <param id="0" name="Instance variable">Health</param>
+                                    <param id="1" name="Value">15</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="9708504533326198" title="Mirrored Enemies2">
+            <sub-events>
+                <comment>Had to find out how to set enemies the other way but individually</comment>
+                <event-block sid="6569602996722278">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="3400374182678588" type="enemy">
+                            <param id="0" name="Unique ID">1006</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="6726626830085304" type="enemy">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="105127197156778">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="3985980758985675" type="enemy">
+                            <param id="0" name="Unique ID">1005</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="9263733857609825" type="enemy">
+                            <param id="0" name="State">0</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="633796083285095">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="3880711106307612" type="System">
-                    <param id="0" name="Variable">enemies_destroyed</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">2</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-13" name="Set boolean" sid="5113183069672632" type="pressurePlate">
-                    <param id="0" name="Instance variable">pressed</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-                <action behavior="Solid" id="0" name="Set enabled" sid="3949803497525484" type="metalDoor">
-                    <param id="0" name="State">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="105127197156778">
-            <conditions>
-                <condition id="-14" name="Pick by unique ID" sid="3985980758985675" type="enemy">
-                    <param id="0" name="Unique ID">1005</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="7" name="Set mirrored" sid="9263733857609825" type="enemy">
-                    <param id="0" name="State">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="6569602996722278">
-            <conditions>
-                <condition id="-14" name="Pick by unique ID" sid="3400374182678588" type="enemy">
-                    <param id="0" name="Unique ID">1006</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="7" name="Set mirrored" sid="6726626830085304" type="enemy">
-                    <param id="0" name="State">0</param>
-                </action>
-            </actions>
-        </event-block>
+        </event-group>
+        <event-group description="" sid="7803607826745014" title="Portal2">
+            <sub-events>
+                <event-block sid="287742491925298">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="6425643885333625" type="soldier">
+                            <param id="0" name="Object">teleporter</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="9824893528989098" type="teleporter">
+                            <param id="0" name="Animation">&quot;On&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="9225799130157673" type="System">
+                            <param id="0" name="Layout">Level 3</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

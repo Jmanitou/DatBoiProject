@@ -922,6 +922,11 @@
         </object-type>
         <object-type name="laserEnemy" sid="3858751764798771">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="4022543547316925">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="244591971977545" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.517241" original-source="D:\DatBoiProject\Art\Enemy\laseeeeer.png">
@@ -953,8 +958,8 @@
                 <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8223401046622909" speed="5">
                     <frame duration="1" hotspotX="0.508772" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Bosses\Fear\fear boss.png">
                         <collision-poly>
-                            <point x="0.184211" y="0.105" />
-                            <point x="0.807018" y="0.22" />
+                            <point x="0.201755" y="0.145" />
+                            <point x="0.649123" y="0.015" />
                             <point x="1" y="0.5" />
                             <point x="0.701754" y="0.66" />
                             <point x="0.513158" y="1" />
@@ -1052,6 +1057,7 @@
         <event-sheet>WakeUp Events.xml</event-sheet>
         <event-sheet>Level Select Events.xml</event-sheet>
         <event-sheet>Credits Events.xml</event-sheet>
+        <event-sheet>Similar Events.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="1839" />

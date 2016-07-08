@@ -3,471 +3,211 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Level 3 Events</name>
     <events>
-        <comment>Music</comment>
-        <event-block sid="6644333097783735">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="1685863573189056" type="System" />
-            </conditions>
-            <actions>
-                <action id="6" name="Stop" sid="1011728475036627" type="Audio">
-                    <param id="0" name="Tag">&quot;&quot;</param>
-                </action>
-                <action id="0" name="Play" sid="608644164178158" type="Audio">
-                    <param id="0" name="Audio file">level3Music</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="4061892208602631" type="soldier">
-                    <param id="0" name="Instance variable">Melee</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="7901673423760985" type="soldier">
-                    <param id="0" name="Instance variable">Jump</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="8972612456515228" type="pressurePlate">
-                    <param id="0" name="Instance variable">pressed</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <comment>Portal</comment>
-        <event-block sid="6746959150946282">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="3535428151161039" type="soldier">
-                    <param id="0" name="Object">teleporter</param>
-                </condition>
-                <condition id="2" name="Is playing" sid="5563063456365096" type="teleporter">
-                    <param id="0" name="Animation">&quot;On&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="9976544834594694" type="System">
-                    <param id="0" name="Layout">WakeUp</param>
-                </action>
-            </actions>
-        </event-block>
-        <comment>Spikes</comment>
-        <event-block sid="1801288599227008">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="9662204080851893" type="soldier">
-                    <param id="0" name="Object">spike</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-26" name="Restart layout" sid="2050832761667103" type="System" />
-            </actions>
-        </event-block>
-        <comment>Movement</comment>
-        <event-block sid="1727306539746233">
-            <conditions>
-                <condition id="2" name="Key is down" sid="164975031551632" type="Keyboard">
-                    <param id="0" name="Key">39 (Right arrow)</param>
-                </condition>
-                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="7592961981997998" type="soldier">
-                    <param id="0" name="Instance variable">Melee</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="5841974053987389" type="soldier">
-                    <param id="0" name="Animation">&quot;Walking&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="7" name="Set mirrored" sid="4891517065964593" type="soldier">
-                    <param id="0" name="State">1</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="2298318895677925" type="soldier">
-                    <param id="0" name="Instance variable">Mirror</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="4750109831639112">
-            <conditions>
-                <condition id="2" name="Key is down" sid="7912412424118584" type="Keyboard">
-                    <param id="0" name="Key">37 (Left arrow)</param>
-                </condition>
-                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="4782493806133975" type="soldier">
-                    <param id="0" name="Instance variable">Melee</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="9350910028611689" type="soldier">
-                    <param id="0" name="Animation">&quot;Walking&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="7" name="Set mirrored" sid="7811412439562494" type="soldier">
-                    <param id="0" name="State">0</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="7516926135289147" type="soldier">
-                    <param id="0" name="Instance variable">Mirror</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="7701560748663424">
-            <conditions>
-                <condition id="2" name="Key is down" sid="5146378857298937" type="Keyboard">
-                    <param id="0" name="Key">38 (Up arrow)</param>
-                </condition>
-                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="3798261570551292" type="soldier">
-                    <param id="0" name="Instance variable">Melee</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="6189682589358347" type="soldier">
-                    <param id="0" name="Animation">&quot;Jumping&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block any="1" sid="5755973186052301">
-            <conditions>
-                <condition id="3" name="On key released" sid="9392455544196531" type="Keyboard">
-                    <param id="0" name="Key">39 (Right arrow)</param>
-                </condition>
-                <condition id="3" name="On key released" sid="593294168293554" type="Keyboard">
-                    <param id="0" name="Key">37 (Left arrow)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="2883619509730919" type="soldier">
-                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="5015695715427886">
-            <conditions>
-                <condition behavior="Platform" id="9" name="On landed" sid="8759344669061927" type="soldier" />
-                <condition id="2" name="Is playing" sid="9349844783835944" type="soldier">
-                    <param id="0" name="Animation">&quot;Jumping&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="1870190507077427" type="soldier">
-                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="9488918307031872">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="9974215354330279" type="Keyboard">
-                    <param id="0" name="Key">88 (X)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Timer" id="0" name="Start timer" sid="7827520145709574" type="soldier">
-                    <param id="0" name="Duration">0.5</param>
-                    <param id="1" name="Type">1</param>
-                    <param id="2" name="Tag">&quot;shoot&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="9733143773362199">
-            <conditions>
-                <condition id="3" name="On key released" sid="7362947525443083" type="Keyboard">
-                    <param id="0" name="Key">88 (X)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Timer" id="1" name="Stop timer" sid="9004339889962121" type="soldier">
-                    <param id="0" name="Tag">&quot;shoot&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="3543732461219177">
-            <conditions>
-                <condition behavior="Timer" id="0" name="On timer" sid="5369644469897322" type="soldier">
-                    <param id="0" name="Tag">&quot;shoot&quot;</param>
-                </condition>
-            </conditions>
-            <actions />
+        <include>Similar Events</include>
+        <event-group description="" sid="7953953241275936" title="Start4">
             <sub-events>
-                <event-block sid="4055284339038198">
+                <event-block sid="6644333097783735">
                     <conditions>
-                        <condition id="-8" name="Is boolean instance variable set" sid="1082749825053138" type="soldier">
-                            <param id="0" name="Instance variable">Mirror</param>
-                        </condition>
+                        <condition id="-2" name="On start of layout" sid="1685863573189056" type="System" />
                     </conditions>
                     <actions>
-                        <action id="0" name="Spawn another object" sid="4332083569698869" type="soldier">
-                            <param id="0" name="Object">bullet</param>
-                            <param id="1" name="Layer">1</param>
-                            <param id="2" name="Image point">1</param>
+                        <action id="6" name="Stop" sid="1011728475036627" type="Audio">
+                            <param id="0" name="Tag">&quot;&quot;</param>
                         </action>
-                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="5077822624402239" type="bullet">
-                            <param id="0" name="Angle">180</param>
+                        <action id="0" name="Play" sid="608644164178158" type="Audio">
+                            <param id="0" name="Audio file">level3Music</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
-                    </actions>
-                </event-block>
-                <event-block sid="6302477133119679">
-                    <conditions>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="5761042251340133" type="soldier">
-                            <param id="0" name="Instance variable">Mirror</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Spawn another object" sid="6456760441820652" type="soldier">
-                            <param id="0" name="Object">bullet</param>
-                            <param id="1" name="Layer">1</param>
-                            <param id="2" name="Image point">1</param>
+                        <action id="-13" name="Set boolean" sid="4061892208602631" type="soldier">
+                            <param id="0" name="Instance variable">Melee</param>
+                            <param id="1" name="Value">0</param>
                         </action>
-                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="7655643530226754" type="bullet">
-                            <param id="0" name="Angle">0</param>
+                        <action id="-13" name="Set boolean" sid="7901673423760985" type="soldier">
+                            <param id="0" name="Instance variable">Jump</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="8972612456515228" type="pressurePlate">
+                            <param id="0" name="Instance variable">pressed</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="5021445062097855" type="soldier">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Value">100</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <comment>Melee</comment>
-        <event-block sid="6648357424767759">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="8589927651051486" type="Keyboard">
-                    <param id="0" name="Key">90 (Z)</param>
-                </condition>
-                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="7690326220018368" type="soldier">
-                    <param id="0" name="Instance variable">Melee</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-13" name="Set boolean" sid="6468665612200464" type="soldier">
-                    <param id="0" name="Instance variable">Melee</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="4" name="Set animation" sid="4521247679169561" type="soldier">
-                    <param id="0" name="Animation">&quot;Melee&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="-16" name="Wait" sid="2227036585192534" type="System">
-                    <param id="0" name="Seconds">1.0</param>
-                </action>
-                <action id="4" name="Set animation" sid="392810744757177" type="soldier">
-                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="1464422125327792" type="soldier">
-                    <param id="0" name="Instance variable">Melee</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <comment>Health</comment>
-        <event-block sid="3484165903444092">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="7222307160066153" type="soldier">
-                    <param id="0" name="Instance variable">Health</param>
-                    <param id="1" name="Comparison">3</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-26" name="Restart layout" sid="8166979890326615" type="System" />
-            </actions>
-        </event-block>
-        <event-block sid="8936443553124756">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="7001536518592278" type="enemy">
-                    <param id="0" name="Instance variable">Health</param>
-                    <param id="1" name="Comparison">3</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="6256811676000894" type="enemy" />
-            </actions>
-        </event-block>
-        <event-block sid="9873845723182194">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="3010003913665236" type="enemy">
-                    <param id="0" name="Object">bullet</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-12" name="Subtract from" sid="7221762000404701" type="enemy">
-                    <param id="0" name="Instance variable">Health</param>
-                    <param id="1" name="Value">20</param>
-                </action>
-                <action id="-9" name="Destroy" sid="5921590975825105" type="bullet" />
-            </actions>
-        </event-block>
-        <event-block sid="4676797915290119">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="5093321860033316" type="bullet">
-                    <param id="0" name="Object">crate</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="1804635139431179" type="bullet" />
-            </actions>
-        </event-block>
-        <event-block sid="9174019286860034">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="7075873059753406" type="bullet">
-                    <param id="0" name="Object">concrete</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="5440102508158408" type="bullet" />
-            </actions>
-        </event-block>
-        <comment>Enemies</comment>
-        <event-block sid="2138148897625866">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="2740257750133638" type="soldier">
-                    <param id="0" name="Object">enemy</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-12" name="Subtract from" sid="7780719304649099" type="soldier">
-                    <param id="0" name="Instance variable">Health</param>
-                    <param id="1" name="Value">10</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="4910480260540154">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="1592140595286927" type="bullet">
-                    <param id="0" name="Object">bossLove</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="7825692323342689" type="bullet" />
-                <action id="-12" name="Subtract from" sid="306956534574394" type="bossLove">
-                    <param id="0" name="Instance variable">Health</param>
-                    <param id="1" name="Value">20</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="2199377134675224">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="4723771835440425" type="bossLove">
-                    <param id="0" name="Instance variable">Health</param>
-                    <param id="1" name="Comparison">3</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="4167508472081738" type="teleporter">
-                    <param id="0" name="Animation">&quot;On&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="-9" name="Destroy" sid="71085858911137" type="bossLove" />
-            </actions>
-        </event-block>
-        <event-block sid="4043003388173845">
-            <conditions>
-                <condition id="1" name="Is overlapping another object" sid="8870905403003079" type="bossLove">
-                    <param id="0" name="Object">soldier</param>
-                </condition>
-                <condition id="-6" name="Every X seconds" sid="3858571946033367" type="System">
-                    <param id="0" name="Interval (seconds)">1.0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-12" name="Subtract from" sid="5110674617935172" type="soldier">
-                    <param id="0" name="Instance variable">Health</param>
-                    <param id="1" name="Value">15</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="8889631971342036">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="7448555585365128" type="System">
-                    <param id="0" name="Interval (seconds)">0.1</param>
-                </condition>
-                <condition id="-3" name="Is on-screen" sid="2937085951430032" type="bossLove" />
-            </conditions>
-            <actions>
-                <action behavior="Pathfinding" id="0" name="Find path" sid="9889950351588102" type="bossLove">
-                    <param id="0" name="X">soldier.X</param>
-                    <param id="1" name="Y">soldier.Y</param>
-                </action>
-                <action id="-9" name="Set value" sid="6496152915386831" type="System">
-                    <param id="0" name="Variable">DistancetoBoss</param>
-                    <param id="1" name="Value">bossRage.X - soldier.X</param>
-                </action>
-            </actions>
+        </event-group>
+        <event-group description="" sid="6829001416121829" title="Portal3">
             <sub-events>
-                <event-block sid="3150879806584962">
+                <event-block sid="6746959150946282">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="6265625914956385" type="System">
-                            <param id="0" name="Variable">DistancetoBoss</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">0</param>
+                        <condition id="0" name="On collision with another object" sid="3535428151161039" type="soldier">
+                            <param id="0" name="Object">teleporter</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="5563063456365096" type="teleporter">
+                            <param id="0" name="Animation">&quot;On&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="7" name="Set mirrored" sid="2774408165069603" type="bossLove">
-                            <param id="0" name="State">1</param>
+                        <action id="-2" name="Go to layout" sid="9976544834594694" type="System">
+                            <param id="0" name="Layout">WakeUp</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="4437561635337355">
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="7794495302569633" title="Spikes2">
+            <sub-events>
+                <event-block sid="1801288599227008">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="5773738574683115" type="System">
-                            <param id="0" name="Variable">DistancetoBoss</param>
-                            <param id="1" name="Comparison">2</param>
+                        <condition id="0" name="On collision with another object" sid="9662204080851893" type="soldier">
+                            <param id="0" name="Object">spike</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="2050832761667103" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="217144290108287" title="Boss3">
+            <sub-events>
+                <event-block sid="4910480260540154">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1592140595286927" type="bullet">
+                            <param id="0" name="Object">bossLove</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7825692323342689" type="bullet" />
+                        <action id="-12" name="Subtract from" sid="306956534574394" type="bossLove">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Value">20</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2199377134675224">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="4723771835440425" type="bossLove">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Comparison">3</param>
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="7" name="Set mirrored" sid="3399242811297104" type="bossLove">
+                        <action id="4" name="Set animation" sid="4167508472081738" type="teleporter">
+                            <param id="0" name="Animation">&quot;On&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="71085858911137" type="bossLove" />
+                    </actions>
+                </event-block>
+                <comment>Found out how to make it follow the player</comment>
+                <event-block sid="4043003388173845">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="8870905403003079" type="bossLove">
+                            <param id="0" name="Object">soldier</param>
+                        </condition>
+                        <condition id="-6" name="Every X seconds" sid="3858571946033367" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="5110674617935172" type="soldier">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Value">15</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8889631971342036">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="7448555585365128" type="System">
+                            <param id="0" name="Interval (seconds)">0.1</param>
+                        </condition>
+                        <condition id="-3" name="Is on-screen" sid="2937085951430032" type="bossLove" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="9889950351588102" type="bossLove">
+                            <param id="0" name="X">soldier.X</param>
+                            <param id="1" name="Y">soldier.Y</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="6496152915386831" type="System">
+                            <param id="0" name="Variable">DistancetoBoss</param>
+                            <param id="1" name="Value">bossRage.X - soldier.X</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="3150879806584962">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="6265625914956385" type="System">
+                                    <param id="0" name="Variable">DistancetoBoss</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="2774408165069603" type="bossLove">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4437561635337355">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="5773738574683115" type="System">
+                                    <param id="0" name="Variable">DistancetoBoss</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="3399242811297104" type="bossLove">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="4492461639602036">
+                    <conditions>
+                        <condition behavior="Pathfinding" id="0" name="On path found" sid="9088288706929019" type="bossLove" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="1" name="Move along path" sid="8954457246042861" type="bossLove" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="819503058255194" title="Mirrored Enemies3">
+            <sub-events>
+                <comment>Had to find out how to set enemies the other way but individually</comment>
+                <event-block sid="761764683793182">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="9637549091570478" type="enemy">
+                            <param id="0" name="Unique ID">1011</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="366910902704108" type="enemy">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8534804863699801">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="2320893558497303" type="enemy">
+                            <param id="0" name="Unique ID">2361</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="4827870972267345" type="enemy">
                             <param id="0" name="State">0</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="4492461639602036">
-            <conditions>
-                <condition behavior="Pathfinding" id="0" name="On path found" sid="9088288706929019" type="bossLove" />
-            </conditions>
-            <actions>
-                <action behavior="Pathfinding" id="1" name="Move along path" sid="8954457246042861" type="bossLove" />
-            </actions>
-        </event-block>
-        <event-block sid="9656275048930438">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="5992681202643556" type="soldier">
-                    <param id="0" name="Object">enemy</param>
-                </condition>
-                <condition id="2" name="Is playing" sid="5248024335053341" type="soldier">
-                    <param id="0" name="Animation">&quot;Melee&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-12" name="Subtract from" sid="3786789756888968" type="enemy">
-                    <param id="0" name="Instance variable">Health</param>
-                    <param id="1" name="Value">20</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="761764683793182">
-            <conditions>
-                <condition id="-14" name="Pick by unique ID" sid="9637549091570478" type="enemy">
-                    <param id="0" name="Unique ID">1011</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="7" name="Set mirrored" sid="366910902704108" type="enemy">
-                    <param id="0" name="State">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="8534804863699801">
-            <conditions>
-                <condition id="-14" name="Pick by unique ID" sid="2320893558497303" type="enemy">
-                    <param id="0" name="Unique ID">2361</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="7" name="Set mirrored" sid="4827870972267345" type="enemy">
-                    <param id="0" name="State">0</param>
-                </action>
-            </actions>
-        </event-block>
+        </event-group>
     </events>
 </c2eventsheet>

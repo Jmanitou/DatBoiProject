@@ -3,41 +3,49 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>WakeUp Events</name>
     <events>
-        <event-block sid="7384337046695541">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="6844567466014763" type="System" />
-            </conditions>
-            <actions>
-                <action id="-16" name="Wait" sid="2509415737212096" type="System">
-                    <param id="0" name="Seconds">4.0</param>
-                </action>
-                <action id="-3" name="Set position" sid="1987888932063802" type="orders">
-                    <param id="0" name="X">595</param>
-                    <param id="1" name="Y">245</param>
-                </action>
-                <action id="-3" name="Set position" sid="1572084214451402" type="transmission">
-                    <param id="0" name="X">518</param>
-                    <param id="1" name="Y">385</param>
-                </action>
-                <action id="-3" name="Set position" sid="6429584309598494" type="cursor">
-                    <param id="0" name="X">631</param>
-                    <param id="1" name="Y">383</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="3766009068484345">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="5888904414287281" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">creditButton</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="2913805805605599" type="System">
-                    <param id="0" name="Layout">Credits</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="7185474030763591" title="Start">
+            <sub-events>
+                <event-block sid="7384337046695541">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="6844567466014763" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="2509415737212096" type="System">
+                            <param id="0" name="Seconds">4.0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="1987888932063802" type="orders">
+                            <param id="0" name="X">595</param>
+                            <param id="1" name="Y">245</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="1572084214451402" type="transmission">
+                            <param id="0" name="X">518</param>
+                            <param id="1" name="Y">385</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="6429584309598494" type="cursor">
+                            <param id="0" name="X">631</param>
+                            <param id="1" name="Y">383</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="6373307831796612" title="Button2">
+            <sub-events>
+                <event-block sid="3766009068484345">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="5888904414287281" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">creditButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="2913805805605599" type="System">
+                            <param id="0" name="Layout">Credits</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

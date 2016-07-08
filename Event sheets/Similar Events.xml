@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Similar Events</name>
+    <events>
+        <event-group description="" sid="6926013832173003" title="Keyboard - Character">
+            <sub-events>
+                <event-block sid="6445897241894838">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="1191533434427784" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="1372181902074696" type="soldier">
+                            <param id="0" name="Instance variable">Melee</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8196331035727032" type="soldier">
+                            <param id="0" name="Animation">&quot;Walking&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="2774675441927379" type="soldier">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="779325211344493" type="soldier">
+                            <param id="0" name="Instance variable">Mirror</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1601142425075405">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="5940539905801914" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="8398915589313493" type="soldier">
+                            <param id="0" name="Instance variable">Melee</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9153013956435142" type="soldier">
+                            <param id="0" name="Animation">&quot;Walking&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="9959348930176845" type="soldier">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="4238888383589468" type="soldier">
+                            <param id="0" name="Instance variable">Mirror</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2833132901801578">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="5209228291556831" type="Keyboard">
+                            <param id="0" name="Key">38 (Up arrow)</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="2448055501804506" type="soldier">
+                            <param id="0" name="Instance variable">Melee</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="2189751495739197" type="soldier">
+                            <param id="0" name="Animation">&quot;Jumping&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="1555444530143447">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="2174368639186621" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                        <condition id="3" name="On key released" sid="546863288927352" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4130325567849439" type="soldier">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4656786863098029">
+                    <conditions>
+                        <condition behavior="Platform" id="9" name="On landed" sid="3902547568952598" type="soldier" />
+                        <condition id="2" name="Is playing" sid="673281617059505" type="soldier">
+                            <param id="0" name="Animation">&quot;Jumping&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6966988535203573" type="soldier">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1716396415020548">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="8400601017747251" type="Keyboard">
+                            <param id="0" name="Key">88 (X)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Timer" id="0" name="Start timer" sid="2561751716407282" type="soldier">
+                            <param id="0" name="Duration">0.5</param>
+                            <param id="1" name="Type">1</param>
+                            <param id="2" name="Tag">&quot;shoot&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2181421620350353">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="4897518493731037" type="Keyboard">
+                            <param id="0" name="Key">88 (X)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Timer" id="1" name="Stop timer" sid="3439314228653042" type="soldier">
+                            <param id="0" name="Tag">&quot;shoot&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2474820515121031">
+                    <conditions>
+                        <condition behavior="Timer" id="0" name="On timer" sid="4404418288311902" type="soldier">
+                            <param id="0" name="Tag">&quot;shoot&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="6213377091864719">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="4601402243174614" type="soldier">
+                                    <param id="0" name="Instance variable">Mirror</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="9162913069996868" type="soldier">
+                                    <param id="0" name="Object">bullet</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="7652846075218332" type="bullet">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4531220472927444">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="2913757704840317" type="soldier">
+                                    <param id="0" name="Instance variable">Mirror</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="1635276528288216" type="soldier">
+                                    <param id="0" name="Object">bullet</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="5870288094043893" type="bullet">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="8140676833653759">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="2525018835170309" type="Keyboard">
+                            <param id="0" name="Key">90 (Z)</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="6977669081958276" type="soldier">
+                            <param id="0" name="Instance variable">Melee</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="880274914317878" type="soldier">
+                            <param id="0" name="Instance variable">Melee</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="2050161590208291" type="soldier">
+                            <param id="0" name="Animation">&quot;Melee&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="909378293836184" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="3238638613838049" type="soldier">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="152224576104746" type="soldier">
+                            <param id="0" name="Instance variable">Melee</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="1060946111513345" title="Health">
+            <sub-events>
+                <event-block sid="5300652589728958">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="5753666827922817" type="soldier">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="2667861815425568" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="4646099314501717">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="5226333187117631" type="enemy">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="487323261805941" type="enemy" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="3496824130493543">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="1345787631432425" type="soldier">
+                                    <param id="0" name="Object">laserEnemy</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="8376764795352797" type="laserEnemy" />
+                                <action id="-12" name="Subtract from" sid="9969757463625594" type="soldier">
+                                    <param id="0" name="Instance variable">Health</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="6020304583800226" title="Bullets">
+            <sub-events>
+                <event-block sid="8501068545047192">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="4303975586325208" type="enemy">
+                            <param id="0" name="Object">bullet</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="8697769101124522" type="enemy">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Value">20</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="7022220313174864" type="bullet" />
+                    </actions>
+                </event-block>
+                <event-block sid="3971133330177134">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="902088504036063" type="bullet">
+                            <param id="0" name="Object">crate</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="9661121503285683" type="bullet" />
+                    </actions>
+                </event-block>
+                <event-block sid="6440567653792618">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="3330892135910011" type="bullet">
+                            <param id="0" name="Object">concrete</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="1458809305073265" type="bullet" />
+                    </actions>
+                </event-block>
+                <event-block sid="6045219428770853">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1132925765081712" type="laserEnemy">
+                            <param id="0" name="Object">concrete</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="2176518650425707" type="laserEnemy" />
+                    </actions>
+                </event-block>
+                <event-block sid="478748908257117">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="8675619676548453" type="System">
+                            <param id="0" name="Interval (seconds)">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="4401192911027606">
+                            <conditions>
+                                <condition id="7" name="Is mirrored" sid="4078143630074088" type="enemy" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="4994594426080923" type="enemy">
+                                    <param id="0" name="Object">laserEnemy</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="2336814463777957" type="laserEnemy">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4998499131545946">
+                            <conditions>
+                                <condition id="7" inverted="1" name="Is mirrored" sid="9000476675561038" type="enemy" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="5039463027266454" type="enemy">
+                                    <param id="0" name="Object">laserEnemy</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="6466746239565721" type="laserEnemy">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="5935505880050637">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="19636082645873" type="bullet">
+                            <param id="0" name="Object">laserEnemy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7877791651558202" type="laserEnemy" />
+                        <action id="-9" name="Destroy" sid="6620248628781067" type="bullet" />
+                    </actions>
+                </event-block>
+                <event-block sid="9125938824218742">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1960511583856099" type="bullet">
+                            <param id="0" name="Object">crate</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7554030446023806" type="bullet" />
+                    </actions>
+                </event-block>
+                <event-block sid="8823138700091138">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8797197318104286" type="bullet">
+                            <param id="0" name="Object">concrete</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="551976149404736" type="bullet" />
+                    </actions>
+                </event-block>
+                <event-block sid="3757016664638457">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="4302218674778412" type="laserEnemy">
+                            <param id="0" name="Object">crate</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="2206171015665319" type="laserEnemy" />
+                    </actions>
+                </event-block>
+                <event-block sid="3092960123311707">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="3232728981594023" type="soldier">
+                            <param id="0" name="Object">enemy</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="86852735475873" type="soldier">
+                            <param id="0" name="Animation">&quot;Melee&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="8406175124305733" type="enemy">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Value">20</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

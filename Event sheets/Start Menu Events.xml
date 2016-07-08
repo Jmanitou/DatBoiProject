@@ -3,79 +3,85 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Start Menu Events</name>
     <events>
-        <comment>Buttons</comment>
-        <event-block sid="1181138927268831">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="6472433449629601" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">storyButton</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="1116035364267319" type="System">
-                    <param id="0" name="Layout">Story</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="8465223125543562">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="6078877550801482" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">startButton</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="9122168547491006" type="System">
-                    <param id="0" name="Layout">Level 1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="8471739935001851">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="4479315348060939" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">soldierDecal</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="931194323931583" type="System">
-                    <param id="0" name="Layout">Level Select</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="1197613843464552">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="7591389699939646" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">creditButton</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="1276160743468801" type="System">
-                    <param id="0" name="Layout">Credits</param>
-                </action>
-            </actions>
-        </event-block>
-        <comment>Music</comment>
-        <event-block sid="6103049037843285">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="9415876315856437" type="System" />
-            </conditions>
-            <actions>
-                <action id="6" name="Stop" sid="2281213319405324" type="Audio">
-                    <param id="0" name="Tag">&quot;&quot;</param>
-                </action>
-                <action id="0" name="Play" sid="5981838435876992" type="Audio">
-                    <param id="0" name="Audio file">start_menu_music</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="6621841756951864" title="Buttons">
+            <sub-events>
+                <event-block sid="1181138927268831">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="6472433449629601" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">storyButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="1116035364267319" type="System">
+                            <param id="0" name="Layout">Story</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8465223125543562">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="6078877550801482" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">startButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="9122168547491006" type="System">
+                            <param id="0" name="Layout">Level 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8471739935001851">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="4479315348060939" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">soldierDecal</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="931194323931583" type="System">
+                            <param id="0" name="Layout">Level Select</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1197613843464552">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="7591389699939646" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">creditButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="1276160743468801" type="System">
+                            <param id="0" name="Layout">Credits</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="91132289909354" title="Music">
+            <sub-events>
+                <event-block sid="6103049037843285">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="9415876315856437" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="2281213319405324" type="Audio">
+                            <param id="0" name="Tag">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="5981838435876992" type="Audio">
+                            <param id="0" name="Audio file">start_menu_music</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
