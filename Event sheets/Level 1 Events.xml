@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Level 1 Events</name>
     <events>
+        <variable constant="0" name="DistancetoBoss" sid="3043100241829539" static="0" type="number">0</variable>
         <comment>Music</comment>
         <event-block sid="8354354717246428">
             <conditions>
@@ -306,13 +307,18 @@
         </event-block>
         <event-block sid="517853644149448">
             <conditions>
-                <condition id="-19" name="On destroyed" sid="3638639477289914" type="bossRage" />
+                <condition id="-7" name="Compare instance variable" sid="3638639477289914" type="bossRage">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="2696983096993385" type="teleporter">
                     <param id="0" name="Animation">&quot;On&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
+                <action id="-9" name="Destroy" sid="5605704388682229" type="bossRage" />
             </actions>
         </event-block>
         <event-block sid="3296241223436701">
@@ -330,6 +336,99 @@
                     <param id="1" name="Value">10</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="8482920918530118">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8794353425814721" type="bullet">
+                    <param id="0" name="Object">bossRage</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="3625982568204242" type="bossRage">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Value">20</param>
+                </action>
+                <action id="-9" name="Destroy" sid="161971957182949" type="bullet" />
+            </actions>
+        </event-block>
+        <event-block sid="9953296093407057">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="297629171840088" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
+                <condition id="-3" name="Is on-screen" sid="580256706867122" type="bossRage" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="6065236204065343" type="bossRage">
+                    <param id="0" name="X">soldier.X</param>
+                    <param id="1" name="Y">soldier.Y</param>
+                </action>
+                <action id="-9" name="Set value" sid="7061168918113711" type="System">
+                    <param id="0" name="Variable">DistancetoBoss</param>
+                    <param id="1" name="Value">bossRage.X - soldier.X</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="8539632147212329">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="9252702595770409" type="System">
+                            <param id="0" name="Variable">DistancetoBoss</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="176640511268048" type="bossRage">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3781240763732511">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="7352183958232273" type="System">
+                            <param id="0" name="Variable">DistancetoBoss</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="1185862613400483" type="bossRage">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="7804999217687">
+            <conditions>
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="8789138631082587" type="bossRage" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="8611047626463121" type="bossRage" />
+            </actions>
+        </event-block>
+        <event-block sid="5537952233581829">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="7353013197058742" type="bossRage">
+                    <param id="0" name="Object">soldier</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="7835446846324022">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="1387338537174158" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="5936959967215423" type="soldier">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Value">15</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

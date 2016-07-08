@@ -800,6 +800,14 @@
         </object-type>
         <object-type name="bossRage" sid="3953912582173797">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Health" sid="8535689404634218" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="9526259554544689">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2145181956699182" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Bosses\rage\angerboss.png">
@@ -933,28 +941,36 @@
         </object-type>
         <object-type name="bossFear" sid="9578344134269916">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Health" sid="5507360664704145" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="2713663584944718">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8223401046622909" speed="5">
                     <frame duration="1" hotspotX="0.508772" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Bosses\Fear\fear boss.png">
                         <collision-poly>
-                            <point x="0.157895" y="0.18" />
+                            <point x="0.184211" y="0.105" />
                             <point x="0.807018" y="0.22" />
                             <point x="1" y="0.5" />
                             <point x="0.701754" y="0.66" />
-                            <point x="0.491228" y="0.98" />
-                            <point x="0.175439" y="0.8" />
-                            <point x="0" y="0.5" />
+                            <point x="0.513158" y="1" />
+                            <point x="0.100878" y="0.975" />
+                            <point x="0" y="0.295" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.508772" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Bosses\Fear\flap fear.png">
                         <collision-poly>
-                            <point x="0.140351" y="0.16" />
-                            <point x="0.491228" y="0.14" />
-                            <point x="0.807018" y="0.22" />
-                            <point x="0.947368" y="0.5" />
-                            <point x="0.491228" y="0.92" />
-                            <point x="0.105263" y="0.88" />
-                            <point x="0.0877193" y="0.5" />
+                            <point x="0.241228" y="0.05" />
+                            <point x="0.574561" y="0.095" />
+                            <point x="0.754386" y="0.11" />
+                            <point x="0.93421" y="0.68" />
+                            <point x="0.513158" y="0.955" />
+                            <point x="0.114035" y="0.905" />
+                            <point x="0.0263158" y="0.245" />
                         </collision-poly>
                     </frame>
                 </animation>

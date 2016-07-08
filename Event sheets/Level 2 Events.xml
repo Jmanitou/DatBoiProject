@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Level 2 Events</name>
     <events>
+        <variable constant="0" name="DistancetoBoos" sid="8680778227555951" static="0" type="number">0</variable>
         <comment>Music</comment>
         <event-block sid="5094290347891068">
             <conditions>
@@ -272,6 +273,9 @@
             <conditions>
                 <condition id="0" name="On collision with another object" sid="2758148274404645" type="soldier">
                     <param id="0" name="Object">teleporter</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="7875519998450381" type="teleporter">
+                    <param id="0" name="Animation">&quot;On&quot;</param>
                 </condition>
             </conditions>
             <actions>
@@ -547,6 +551,131 @@
                     <param id="1" name="Value">10</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="1176209694255077">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="714701746883675" type="bossFear">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2683809061493275" type="teleporter">
+                    <param id="0" name="Animation">&quot;On&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="735495458633263" type="bossFear" />
+            </actions>
+        </event-block>
+        <event-block sid="2105072295485951">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7784834473911204" type="bullet">
+                    <param id="0" name="Object">bossFear</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="6094447216336808" type="bossFear">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Value">20</param>
+                </action>
+                <action id="-9" name="Destroy" sid="2176139134616535" type="bullet" />
+            </actions>
+        </event-block>
+        <event-block sid="1643688613045783">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3217267190279547" type="soldier">
+                    <param id="0" name="Object">enemy</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="5227968471045498" type="soldier">
+                    <param id="0" name="Animation">&quot;Melee&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="4384194330591202" type="enemy">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5782604950217593">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="6074483897537759" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
+                <condition id="-3" name="Is on-screen" sid="7190639766464853" type="bossFear" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="1075596599150336" type="bossFear">
+                    <param id="0" name="X">soldier.X</param>
+                    <param id="1" name="Y">soldier.Y</param>
+                </action>
+                <action id="-9" name="Set value" sid="1910124425754104" type="System">
+                    <param id="0" name="Variable">DistancetoBoss</param>
+                    <param id="1" name="Value">bossFear.X - soldier.X</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="8242321675077346">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="874565397046558" type="System">
+                            <param id="0" name="Variable">DistancetoBoss</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="744405194952886" type="bossFear">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9843204951946571">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="3987966903282694" type="System">
+                            <param id="0" name="Variable">DistancetoBoss</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="6651952644133314" type="bossFear">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="615121557204076">
+            <conditions>
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="5432465779746766" type="bossFear" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="2075917652606199" type="bossFear" />
+            </actions>
+        </event-block>
+        <event-block sid="7220739410646995">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="5727931687362508" type="bossFear">
+                    <param id="0" name="Object">soldier</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="1663401918344332">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="55893163927542" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="6615056493049017" type="soldier">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Value">15</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
