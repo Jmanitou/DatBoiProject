@@ -373,7 +373,7 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Set Y" sid="683640747450552" type="spike2">
-                            <param id="0" name="Y">spike2.Y +30</param>
+                            <param id="0" name="Y">spike2.Y +50</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -385,7 +385,7 @@
                             </conditions>
                             <actions>
                                 <action id="-2" name="Set Y" sid="7814499622892995" type="TiledBackground">
-                                    <param id="0" name="Y">TiledBackground.Y +30</param>
+                                    <param id="0" name="Y">TiledBackground.Y +50</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -397,7 +397,7 @@
                             </conditions>
                             <actions>
                                 <action id="-2" name="Set Y" sid="2981100451736278" type="TiledBackground">
-                                    <param id="0" name="Y">TiledBackground.Y +30</param>
+                                    <param id="0" name="Y">TiledBackground.Y +50</param>
                                 </action>
                             </actions>
                         </event-block>

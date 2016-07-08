@@ -288,5 +288,18 @@
             </actions>
         </event-block>
         <comment>Enemies</comment>
+        <event-block sid="4645826255835553">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7145614485197302" type="soldier">
+                    <param id="0" name="Object">enemy</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="483817419666007" type="soldier">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
