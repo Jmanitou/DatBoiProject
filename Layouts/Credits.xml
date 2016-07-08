@@ -2,7 +2,7 @@
 <c2layout>
     <name>Credits</name>
     <sid>2585550936858222</sid>
-    <event-sheet>Event sheet 1</event-sheet>
+    <event-sheet>Credits Events</event-sheet>
     <size>
         <width>1708</width>
         <height>960</height>
@@ -169,7 +169,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="2345">
+                <instance type="backButton" uid="2345">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -179,8 +179,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>795</x>
-                        <y>493</y>
+                        <x>773</x>
+                        <y>420</y>
                         <z>0</z>
                         <width>250</width>
                         <height>250</height>

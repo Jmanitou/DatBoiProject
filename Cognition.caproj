@@ -314,7 +314,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="start_menu_music" sid="2415621538899831">
+        <object-type name="Audio" sid="2415621538899831">
             <plugin id="Audio" />
         </object-type>
         <object-type name="anarchyDecal" sid="1343270220571219">
@@ -863,21 +863,6 @@
         <object-type name="Gametitle" sid="7659568795279551">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite2" sid="5805219697852197">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2838897317361903" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0.22" y="0.212" />
-                            <point x="0.484" y="0.216" />
-                            <point x="0.5" y="0.376" />
-                            <point x="0.208" y="0.396" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Sprite" sid="4723697573472961">
             <plugin id="Sprite" />
             <animation-folder>
@@ -914,12 +899,12 @@
         <event-sheet>Level 3 Events.xml</event-sheet>
         <event-sheet>WakeUp Events.xml</event-sheet>
         <event-sheet>Level Select Events.xml</event-sheet>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Credits Events.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="1839" />
         <global-instance type="Keyboard" uid="1840" />
-        <global-instance type="start_menu_music" uid="1841">
+        <global-instance type="Audio" uid="1841">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -937,9 +922,9 @@
     <sounds-folder />
     <music-folder>
         <file name="start_menu_music.ogg" />
-        <file name="level_music.ogg" />
-        <file name="anger_music.ogg" />
-        <file name="fear_music.ogg" />
+        <file name="level1Music.ogg" />
+        <file name="level2Music.ogg" />
+        <file name="level3Music.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">

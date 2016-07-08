@@ -3,6 +3,35 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Level 3 Events</name>
     <events>
+        <comment>Music</comment>
+        <event-block sid="6644333097783735">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1685863573189056" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="1011728475036627" type="Audio">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="608644164178158" type="Audio">
+                    <param id="0" name="Audio file">level3Music</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="4061892208602631" type="soldier">
+                    <param id="0" name="Instance variable">Melee</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="7901673423760985" type="soldier">
+                    <param id="0" name="Instance variable">Jump</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="8972612456515228" type="pressurePlate">
+                    <param id="0" name="Instance variable">pressed</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
         <comment>Movement</comment>
         <event-block sid="1362543239175387">
             <conditions>
@@ -77,6 +106,30 @@
                     <param id="0" name="Animation">&quot;Default&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
+            </actions>
+        </event-block>
+        <comment>Portal</comment>
+        <event-block sid="6746959150946282">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3535428151161039" type="soldier">
+                    <param id="0" name="Object">teleporter</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="9976544834594694" type="System">
+                    <param id="0" name="Layout">WakeUp</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Spikes</comment>
+        <event-block sid="1801288599227008">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9662204080851893" type="soldier">
+                    <param id="0" name="Object">spike</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="2050832761667103" type="System" />
             </actions>
         </event-block>
     </events>
