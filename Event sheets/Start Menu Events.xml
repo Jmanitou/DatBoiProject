@@ -46,6 +46,20 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="1197613843464552">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="7591389699939646" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">creditButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="1276160743468801" type="System">
+                    <param id="0" name="Layout">Credits</param>
+                </action>
+            </actions>
+        </event-block>
         <comment>Music</comment>
         <event-block sid="6103049037843285">
             <conditions>

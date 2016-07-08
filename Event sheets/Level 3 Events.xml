@@ -3,80 +3,199 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Level 3 Events</name>
     <events>
-        <comment>Movement</comment>
-        <event-block sid="1362543239175387">
+        <comment>Music</comment>
+        <event-block sid="6644333097783735">
             <conditions>
-                <condition id="2" name="Key is down" sid="2520916584266912" type="Keyboard">
+                <condition id="-2" name="On start of layout" sid="1685863573189056" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="1011728475036627" type="Audio">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="608644164178158" type="Audio">
+                    <param id="0" name="Audio file">level3Music</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="4061892208602631" type="soldier">
+                    <param id="0" name="Instance variable">Melee</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="7901673423760985" type="soldier">
+                    <param id="0" name="Instance variable">Jump</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="8972612456515228" type="pressurePlate">
+                    <param id="0" name="Instance variable">pressed</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Movement</comment>
+        <event-block sid="1314486371062004">
+            <conditions>
+                <condition id="2" name="Key is down" sid="1017434456220241" type="Keyboard">
                     <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="8069431157029974" type="soldier">
+                    <param id="0" name="Instance variable">Melee</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="9261888064911891" type="soldier">
+                <action id="4" name="Set animation" sid="6032695831690677" type="soldier">
                     <param id="0" name="Animation">&quot;Walking&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="7" name="Set mirrored" sid="4743419471634226" type="soldier">
+                <action id="7" name="Set mirrored" sid="7649245962132439" type="soldier">
                     <param id="0" name="State">1</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="2972726286260974">
+        <event-block sid="8063846363528754">
             <conditions>
-                <condition id="2" name="Key is down" sid="2594820858546427" type="Keyboard">
+                <condition id="2" name="Key is down" sid="9285970803523449" type="Keyboard">
                     <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="4259170105422873" type="soldier">
+                    <param id="0" name="Instance variable">Melee</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="8079612868486857" type="soldier">
+                <action id="4" name="Set animation" sid="5436722509790152" type="soldier">
                     <param id="0" name="Animation">&quot;Walking&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="7" name="Set mirrored" sid="9090031086410458" type="soldier">
+                <action id="7" name="Set mirrored" sid="3242734089576678" type="soldier">
                     <param id="0" name="State">0</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="5751497322186945">
+        <event-block sid="7221183151051682">
             <conditions>
-                <condition id="2" name="Key is down" sid="8588214474289451" type="Keyboard">
+                <condition id="2" name="Key is down" sid="4331487884177353" type="Keyboard">
                     <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="3647278135232197" type="soldier">
+                    <param id="0" name="Instance variable">Melee</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="9713377767305544" type="soldier">
+                <action id="4" name="Set animation" sid="3495273238575302" type="soldier">
                     <param id="0" name="Animation">&quot;Jumping&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
-        <event-block any="1" sid="7114361325414657">
+        <event-block any="1" sid="954288820804629">
             <conditions>
-                <condition id="3" name="On key released" sid="9788158177895555" type="Keyboard">
+                <condition id="3" name="On key released" sid="7105992506840447" type="Keyboard">
                     <param id="0" name="Key">39 (Right arrow)</param>
                 </condition>
-                <condition id="3" name="On key released" sid="8078695018460936" type="Keyboard">
+                <condition id="3" name="On key released" sid="7691120742456158" type="Keyboard">
                     <param id="0" name="Key">37 (Left arrow)</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="5452958035253574" type="soldier">
+                <action id="4" name="Set animation" sid="1425455252629019" type="soldier">
                     <param id="0" name="Animation">&quot;Default&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="827630586341941">
+        <event-block sid="6286674208502934">
             <conditions>
-                <condition behavior="Platform" id="9" name="On landed" sid="8726016980484657" type="soldier" />
-                <condition id="2" name="Is playing" sid="6535337018864486" type="soldier">
+                <condition behavior="Platform" id="9" name="On landed" sid="1413433288693273" type="soldier" />
+                <condition id="2" name="Is playing" sid="9303514365199452" type="soldier">
                     <param id="0" name="Animation">&quot;Jumping&quot;</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="8816589569058605" type="soldier">
+                <action id="4" name="Set animation" sid="5883228806607591" type="soldier">
                     <param id="0" name="Animation">&quot;Default&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
+            </actions>
+        </event-block>
+        <comment>Melee</comment>
+        <event-block sid="142446376863025">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8403204976428571" type="Keyboard">
+                    <param id="0" name="Key">90 (Z)</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="4462097960603657" type="soldier">
+                    <param id="0" name="Instance variable">Melee</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="6774453358162777" type="soldier">
+                    <param id="0" name="Instance variable">Melee</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="646196206209799" type="soldier">
+                    <param id="0" name="Animation">&quot;Melee&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="5705825158433261" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="4" name="Set animation" sid="4820798486143174" type="soldier">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="4620914976268245" type="soldier">
+                    <param id="0" name="Instance variable">Melee</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Portal</comment>
+        <event-block sid="6746959150946282">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3535428151161039" type="soldier">
+                    <param id="0" name="Object">teleporter</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="9976544834594694" type="System">
+                    <param id="0" name="Layout">WakeUp</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Spikes</comment>
+        <event-block sid="1801288599227008">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9662204080851893" type="soldier">
+                    <param id="0" name="Object">spike</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="2050832761667103" type="System" />
+            </actions>
+        </event-block>
+        <comment>Health</comment>
+        <event-block sid="2469279368915661">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="5085111434541228" type="soldier">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="777109552180247" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="6335066788346049">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="5629279775112899" type="enemy">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="2467512115222795" type="enemy" />
             </actions>
         </event-block>
     </events>

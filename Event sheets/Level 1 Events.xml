@@ -10,10 +10,10 @@
             </conditions>
             <actions>
                 <action id="6" name="Stop" sid="8613196715292904" type="Audio">
-                    <param id="0" name="Tag">&quot;start_menu_music.ogg&quot;</param>
+                    <param id="0" name="Tag">&quot;&quot;</param>
                 </action>
-                <action id="0" name="Play" sid="9886931803140586" type="Audio">
-                    <param id="0" name="Audio file">anger_music</param>
+                <action id="0" name="Play" sid="4473085093629352" type="Audio">
+                    <param id="0" name="Audio file">level1Music</param>
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
@@ -148,6 +148,31 @@
                 <action id="-2" name="Go to layout" sid="9225799130157673" type="System">
                     <param id="0" name="Layout">Level 2</param>
                 </action>
+            </actions>
+        </event-block>
+        <comment>Health</comment>
+        <event-block sid="5883616847850835">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="6237412824830216" type="soldier">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="9925538063303274" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="153591689522213">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="8775212756805603" type="enemy">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="1224130403966439" type="enemy" />
             </actions>
         </event-block>
     </events>
