@@ -6094,7 +6094,7 @@
                     <behavior-instances>
                         <behavior-instance type="Solid">
                             <properties>
-                                <initial-state>Disabled</initial-state>
+                                <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -6123,7 +6123,7 @@
                     <behavior-instances>
                         <behavior-instance type="Solid">
                             <properties>
-                                <initial-state>Disabled</initial-state>
+                                <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -6152,7 +6152,7 @@
                     <behavior-instances>
                         <behavior-instance type="Solid">
                             <properties>
-                                <initial-state>Disabled</initial-state>
+                                <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>

@@ -1,0 +1,4 @@
+# Construct 2 backup files
+*.backup1
+*.autosave
+
