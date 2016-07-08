@@ -314,7 +314,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Audio" sid="2415621538899831">
+        <object-type name="start_menu_music" sid="2415621538899831">
             <plugin id="Audio" />
         </object-type>
         <object-type name="anarchyDecal" sid="1343270220571219">
@@ -827,7 +827,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="5938731698396127">
+        <object-type name="creditButton" sid="5938731698396127">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="590118698475571" speed="5">
@@ -878,6 +878,22 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite" sid="4723697573472961">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9783272791025418" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="5742168575063537">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5112964583655151" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -903,7 +919,7 @@
     <global-instances>
         <global-instance type="Mouse" uid="1839" />
         <global-instance type="Keyboard" uid="1840" />
-        <global-instance type="Audio" uid="1841">
+        <global-instance type="start_menu_music" uid="1841">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>

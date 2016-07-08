@@ -1066,7 +1066,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite" uid="2339">
+                <instance type="creditButton" uid="2339">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1077,10 +1077,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>420</x>
-                        <y>210</y>
+                        <y>224</y>
                         <z>0</z>
-                        <width>78</width>
-                        <height>26</height>
+                        <width>105</width>
+                        <height>35</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1118,7 +1118,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>420</x>
-                        <y>280</y>
+                        <y>284</y>
                         <z>0</z>
                         <width>77</width>
                         <height>44</height>
