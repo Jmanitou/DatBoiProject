@@ -9,8 +9,14 @@
                 <condition id="-2" name="On start of layout" sid="8607379491215518" type="System" />
             </conditions>
             <actions>
-                <action id="6" name="Stop" sid="367911349633348" type="start_menu_music">
-                    <param id="0" name="Tag">&quot;anger_music.ogg&quot;</param>
+                <action id="6" name="Stop" sid="367911349633348" type="Audio">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="3294206925982853" type="Audio">
+                    <param id="0" name="Audio file">level2Music</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
                 <action id="-13" name="Set boolean" sid="7212048129424911" type="soldier">
                     <param id="0" name="Instance variable">Melee</param>

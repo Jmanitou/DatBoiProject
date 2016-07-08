@@ -314,7 +314,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="start_menu_music" sid="2415621538899831">
+        <object-type name="Audio" sid="2415621538899831">
             <plugin id="Audio" />
         </object-type>
         <object-type name="anarchyDecal" sid="1343270220571219">
@@ -959,12 +959,12 @@
         <event-sheet>Level 3 Events.xml</event-sheet>
         <event-sheet>WakeUp Events.xml</event-sheet>
         <event-sheet>Level Select Events.xml</event-sheet>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Credits Events.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="1839" />
         <global-instance type="Keyboard" uid="1840" />
-        <global-instance type="start_menu_music" uid="1841">
+        <global-instance type="Audio" uid="1841">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -982,9 +982,9 @@
     <sounds-folder />
     <music-folder>
         <file name="start_menu_music.ogg" />
-        <file name="level_music.ogg" />
-        <file name="anger_music.ogg" />
-        <file name="fear_music.ogg" />
+        <file name="level1Music.ogg" />
+        <file name="level2Music.ogg" />
+        <file name="level3Music.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">
