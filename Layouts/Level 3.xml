@@ -16381,7 +16381,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Health>760</Health>
+                        <Health>600</Health>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pathfinding">

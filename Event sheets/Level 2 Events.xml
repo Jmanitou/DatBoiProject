@@ -567,7 +567,7 @@
             <conditions>
                 <condition id="-7" name="Compare instance variable" sid="714701746883675" type="bossFear">
                     <param id="0" name="Instance variable">Health</param>
-                    <param id="1" name="Comparison">0</param>
+                    <param id="1" name="Comparison">3</param>
                     <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
@@ -736,6 +736,30 @@
                     <param id="1" name="Value">0</param>
                 </action>
                 <action behavior="Solid" id="0" name="Set enabled" sid="3949803497525484" type="metalDoor">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="105127197156778">
+            <conditions>
+                <condition id="-14" name="Pick by unique ID" sid="3985980758985675" type="enemy">
+                    <param id="0" name="Unique ID">1005</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="9263733857609825" type="enemy">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6569602996722278">
+            <conditions>
+                <condition id="-14" name="Pick by unique ID" sid="3400374182678588" type="enemy">
+                    <param id="0" name="Unique ID">1006</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="6726626830085304" type="enemy">
                     <param id="0" name="State">0</param>
                 </action>
             </actions>

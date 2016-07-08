@@ -309,7 +309,7 @@
             <conditions>
                 <condition id="-7" name="Compare instance variable" sid="3638639477289914" type="bossRage">
                     <param id="0" name="Instance variable">Health</param>
-                    <param id="1" name="Comparison">0</param>
+                    <param id="1" name="Comparison">3</param>
                     <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
@@ -429,6 +429,18 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="7950867538152594">
+            <conditions>
+                <condition id="-14" name="Pick by unique ID" sid="360666893329838" type="enemy">
+                    <param id="0" name="Unique ID">2352</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="2097847136078813" type="enemy">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
