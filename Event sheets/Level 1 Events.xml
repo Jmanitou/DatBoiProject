@@ -150,5 +150,30 @@
                 </action>
             </actions>
         </event-block>
+        <comment>Health</comment>
+        <event-block sid="5883616847850835">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="6237412824830216" type="soldier">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="9925538063303274" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="153591689522213">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="8775212756805603" type="enemy">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="1224130403966439" type="enemy" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
