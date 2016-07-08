@@ -968,6 +968,18 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="incompetech" sid="9969892642561949">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="musicCredits" sid="9385036529056309">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="zapsplat" sid="5250730061898343">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text" sid="9325061103528549">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
