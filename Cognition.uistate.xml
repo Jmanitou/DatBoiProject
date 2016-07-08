@@ -13,14 +13,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">Start Menu</layout>
         <layout order="2">Story</layout>
         <layout order="4">Level 1</layout>
-        <layout order="6">Level 2</layout>
+        <layout active="1" order="6">Level 2</layout>
         <layout order="8">Level 3</layout>
         <layout order="10">WakeUp</layout>
         <layout order="12">Level Select</layout>
         <layout order="14">Credits</layout>
         <event-sheet order="1">Start Menu Events</event-sheet>
         <event-sheet order="3">Story Events</event-sheet>
-        <event-sheet active="1" order="5">Level 1 Events</event-sheet>
+        <event-sheet order="5">Level 1 Events</event-sheet>
         <event-sheet order="7">Level 2 Events</event-sheet>
         <event-sheet order="9">Level 3 Events</event-sheet>
         <event-sheet order="11">WakeUp Events</event-sheet>
@@ -65,13 +65,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/gore/" />
         <folder expanded="1" path="animation-folder/chain/" />
         <folder expanded="1" path="animation-folder/spike/" />
-        <folder expanded="1" path="animation-folder/cell/" />
-        <folder expanded="1" path="animation-folder/lever/" />
-        <folder expanded="1" path="animation-folder/mirror/" />
-        <folder expanded="1" path="animation-folder/mirror2/" />
-        <folder expanded="1" path="animation-folder/reciever/" />
         <folder expanded="1" path="animation-folder/metalDoor/" />
-        <folder expanded="1" path="animation-folder/laser/" />
         <folder expanded="1" path="animation-folder/caveBackground/" />
         <folder expanded="1" path="animation-folder/chainLink/" />
         <folder expanded="1" path="animation-folder/teleporter/" />
@@ -94,8 +88,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/brickWall2/" />
         <folder expanded="1" path="animation-folder/creditButton/" />
         <folder expanded="1" path="animation-folder/blackback2/" />
-        <folder expanded="1" path="animation-folder/Sprite2/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
-        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/backButton2/" />
+        <folder expanded="1" path="animation-folder/arrow/" />
+        <folder expanded="1" path="animation-folder/evolDecal/" />
+        <folder expanded="1" path="animation-folder/bossRage/" />
+        <folder expanded="1" path="animation-folder/enemy/" />
+        <folder expanded="1" path="animation-folder/laserEnemy/" />
+        <folder expanded="1" path="animation-folder/bossFear/" />
     </folders-expanded>
 </c2uistate>

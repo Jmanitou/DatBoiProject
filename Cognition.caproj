@@ -447,98 +447,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="cell" sid="7707378200785109">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9767515448337604" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Contruct 2\Sprites\Platformer pack\Request pack\laserLeft.png">
-                        <collision-poly>
-                            <point x="0.5" y="0.157143" />
-                            <point x="0.842857" y="0.157143" />
-                            <point x="1" y="0.5" />
-                            <point x="0.842857" y="0.842857" />
-                            <point x="0.5" y="1" />
-                            <point x="0.242857" y="0.757143" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="lever" sid="2140398252098335">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8459289809886685" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Contruct 2\Sprites\Platformer pack\Request pack\laserSwitchRedOn.png">
-                        <collision-poly>
-                            <point x="0.342857" y="0.342857" />
-                            <point x="0.5" y="0.3" />
-                            <point x="0.942857" y="0.0571429" />
-                            <point x="0.757143" y="0.5" />
-                            <point x="0.942857" y="0.942857" />
-                            <point x="0.5" y="1" />
-                            <point x="0.0571429" y="0.942857" />
-                            <point x="0.242857" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="mirror" sid="1849346577303234">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6377346987877696" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Contruct 2\Sprites\Platformer pack\Request pack\tile_20.png">
-                        <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="0.5" y="0.5" />
-                            <point x="0.514286" y="0.5" />
-                            <point x="1" y="1" />
-                            <point x="0.5" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="mirror2" sid="1793750201397493">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8662066137970731" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Contruct 2\Sprites\Platformer pack\Request pack\tile_20.png">
-                        <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="0.5" y="0.5" />
-                            <point x="0.514286" y="0.5" />
-                            <point x="1" y="1" />
-                            <point x="0.5" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="reciever" sid="8435596492619421">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9543324508470717" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Contruct 2\Sprites\Platformer pack\Request pack\laserUpShoot.png">
-                        <collision-poly>
-                            <point x="0.242857" y="0.242857" />
-                            <point x="0.5" y="0.0714286" />
-                            <point x="0.757143" y="0.242857" />
-                            <point x="0.842857" y="0.5" />
-                            <point x="0.828571" y="0.828571" />
-                            <point x="0.5" y="1" />
-                            <point x="0.171429" y="0.828571" />
-                            <point x="0.157143" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="metalDoor" sid="700248244516191">
             <plugin id="Sprite" />
             <behaviors>
@@ -549,23 +457,6 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5160346291132951" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Contruct 2\Sprites\Platformer pack\Request pack\metalMid.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="laser" sid="1231637690389346">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6791660945152194" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Contruct 2\Sprites\Platformer pack\Request pack\laserBlueHorizontal.png">
-                        <collision-poly>
-                            <point x="0" y="0.371429" />
-                            <point x="0.628571" y="0.371429" />
-                            <point x="1" y="0.371429" />
-                            <point x="1" y="0.628571" />
-                            <point x="0.371429" y="0.628571" />
-                            <point x="0" y="0.628572" />
-                        </collision-poly>
-                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -863,7 +754,7 @@
         <object-type name="Gametitle" sid="7659568795279551">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite2" sid="5805219697852197">
+        <object-type name="backButton2" sid="5805219697852197">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2838897317361903" speed="5">
@@ -878,7 +769,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="4723697573472961">
+        <object-type name="arrow" sid="4723697573472961">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9783272791025418" speed="5">
@@ -886,11 +777,165 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite3" sid="5742168575063537">
+        <object-type name="evolDecal" sid="5742168575063537">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5112964583655151" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bossRage" sid="3953912582173797">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2145181956699182" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Bosses\rage\angerboss.png">
+                        <collision-poly>
+                            <point x="0.255556" y="0.267442" />
+                            <point x="0.5" y="0.162791" />
+                            <point x="0.744444" y="0.267442" />
+                            <point x="0.822222" y="0.5" />
+                            <point x="0.711111" y="0.697674" />
+                            <point x="0.5" y="0.77907" />
+                            <point x="0.255556" y="0.732558" />
+                            <point x="0.111111" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="0" name="Shooting" pingpong="0" repeatcount="1" repeatto="0" sid="7656054020174489" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Bosses\rage\boom.png">
+                        <image-point name="Imagepoint 1" x="0.0671642" y="0.572917" />
+                        <collision-poly>
+                            <point x="0.0223881" y="0.59375" />
+                            <point x="0.492538" y="0.0416667" />
+                            <point x="0.932836" y="0.4375" />
+                            <point x="0.529851" y="0.96875" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505618" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Bosses\rage\charge1.png">
+                        <image-point name="Imagepoint 1" x="0.134831" y="0.442857" />
+                        <collision-poly>
+                            <point x="0.146067" y="0.171429" />
+                            <point x="0.842697" y="0.0857143" />
+                            <point x="0.797753" y="0.857143" />
+                            <point x="0.179775" y="0.828571" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505155" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Bosses\rage\charge2.png">
+                        <image-point name="Imagepoint 1" x="0.0824742" y="0.513514" />
+                        <collision-poly>
+                            <point x="0.134021" y="0.0810811" />
+                            <point x="0.85567" y="0.108108" />
+                            <point x="0.783505" y="0.918919" />
+                            <point x="0.14433" y="0.905405" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Bosses\rage\charge3.png">
+                        <image-point name="Imagepoint 1" x="0.08" y="0.547619" />
+                        <collision-poly>
+                            <point x="0.1" y="0.107143" />
+                            <point x="0.84" y="0.0595238" />
+                            <point x="0.88" y="0.809524" />
+                            <point x="0.05" y="0.952381" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Bosses\rage\dis1.png">
+                        <image-point name="Imagepoint 1" x="0.103175" y="0.535714" />
+                        <collision-poly>
+                            <point x="0.571429" y="0.0714286" />
+                            <point x="0.849206" y="0.452381" />
+                            <point x="0.595237" y="0.928571" />
+                            <point x="0.0634921" y="0.559523" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemy" sid="5916371862996602">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3451112147148489" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="D:\DatBoiProject\Art\Enemy\walk 2.png">
+                        <image-point name="Imagepoint 1" x="1" y="0.377778" />
+                        <collision-poly>
+                            <point x="0.269231" y="0.0277778" />
+                            <point x="0.528846" y="0.0777777" />
+                            <point x="0.5" y="0.288889" />
+                            <point x="0.740385" y="0.344444" />
+                            <point x="0.538462" y="0.733333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0384615" y="0.977778" />
+                            <point x="0.0865385" y="0.294444" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="8307528012616757" speed="5">
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.511111" original-source="D:\DatBoiProject\Art\Enemy\enemy.png">
+                        <image-point name="Imagepoint 1" x="0.965517" y="0.377778" />
+                        <collision-poly>
+                            <point x="0.215517" y="1" />
+                            <point x="0.0775864" y="0.144444" />
+                            <point x="0.405173" y="0.0333319" />
+                            <point x="0.603448" y="0.283333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Enemy\walk3.png">
+                        <image-point name="Imagepoint 1" x="1" y="0.413043" />
+                        <collision-poly>
+                            <point x="0.268518" y="0.048913" />
+                            <point x="0.555555" y="0.076087" />
+                            <point x="0.592592" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="laserEnemy" sid="3858751764798771">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="244591971977545" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.517241" original-source="D:\DatBoiProject\Art\Enemy\laseeeeer.png">
+                        <collision-poly>
+                            <point x="0.0642857" y="0.310345" />
+                            <point x="0.5" y="0.241379" />
+                            <point x="0.942857" y="0.275862" />
+                            <point x="0.971429" y="0.482759" />
+                            <point x="0.978571" y="0.896552" />
+                            <point x="0.5" y="0.931035" />
+                            <point x="0.0714286" y="0.655172" />
+                            <point x="0" y="0.482759" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bossFear" sid="9578344134269916">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8223401046622909" speed="5">
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Bosses\Fear\fear boss.png">
+                        <collision-poly>
+                            <point x="0.157895" y="0.18" />
+                            <point x="0.807018" y="0.22" />
+                            <point x="1" y="0.5" />
+                            <point x="0.701754" y="0.66" />
+                            <point x="0.491228" y="0.98" />
+                            <point x="0.175439" y="0.8" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.5" original-source="D:\DatBoiProject\Art\Bosses\Fear\flap fear.png">
+                        <collision-poly>
+                            <point x="0.140351" y="0.16" />
+                            <point x="0.491228" y="0.14" />
+                            <point x="0.807018" y="0.22" />
+                            <point x="0.947368" y="0.5" />
+                            <point x="0.491228" y="0.92" />
+                            <point x="0.105263" y="0.88" />
+                            <point x="0.0877193" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
