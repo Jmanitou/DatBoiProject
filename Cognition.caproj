@@ -231,7 +231,7 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="2" loop="0" name="Melee" pingpong="0" repeatcount="1" repeatto="0" sid="1986268626571169" speed="5">
+                <animation framecount="2" loop="0" name="Melee" pingpong="0" repeatcount="1" repeatto="0" sid="1986268626571169" speed="10">
                     <frame duration="1" hotspotX="0.517241" hotspotY="0.509804" original-source="D:\DatBoiProject\Art\Player Main\brandish.png">
                         <collision-poly>
                             <point x="0.12931" y="0.0147059" />
@@ -1001,6 +1001,33 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9696740752229633" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.501449" original-source="D:\DatBoiProject\Art\woah.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bossLove" sid="7899506183798709">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Health" sid="3907698628418657" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="8892469924217547">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6335095161638219" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DatBoiFinalProject\DatBoiProject\Art\Bosses\Love\love boss.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.00925926" />
+                            <point x="0.492188" y="0" />
+                            <point x="0.832031" y="0" />
+                            <point x="1" y="0.37963" />
+                            <point x="0.78125" y="0.740741" />
+                            <point x="0.5" y="1" />
+                            <point x="0.21875" y="0.740741" />
+                            <point x="0.0117188" y="0.384259" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>

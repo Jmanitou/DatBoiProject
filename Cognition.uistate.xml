@@ -13,8 +13,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">Start Menu</layout>
         <layout order="2">Story</layout>
         <layout order="4">Level 1</layout>
-        <layout active="1" order="6">Level 2</layout>
-        <layout order="8">Level 3</layout>
+        <layout order="6">Level 2</layout>
+        <layout active="1" order="8">Level 3</layout>
         <layout order="10">WakeUp</layout>
         <layout order="12">Level Select</layout>
         <layout order="14">Credits</layout>
@@ -98,5 +98,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/bossFear/" />
         <folder expanded="1" path="animation-folder/catchDecal/" />
         <folder expanded="1" path="animation-folder/smileyDecal/" />
+        <folder expanded="1" path="animation-folder/bossLove/" />
     </folders-expanded>
 </c2uistate>
