@@ -272,7 +272,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text" uid="279">
+                <instance type="songReference" uid="279">
                     <properties>
                         <text>Difficult Decisions</text>
                         <initial-visibility>Visible</initial-visibility>

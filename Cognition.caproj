@@ -704,7 +704,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TiledBackground" sid="1250415848862425">
+        <object-type name="movingBlocks" sid="1250415848862425">
             <plugin id="TiledBg" />
             <texture original-source="D:\DatBoiProject\DownloadedFiles\ConcreteFLoor.jpg" />
         </object-type>
@@ -998,7 +998,7 @@
         <object-type name="zapsplat" sid="5250730061898343">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Text" sid="9325061103528549">
+        <object-type name="songReference" sid="9325061103528549">
             <plugin id="Text" />
         </object-type>
         <object-type name="smileyDecal" sid="3410558617901602">

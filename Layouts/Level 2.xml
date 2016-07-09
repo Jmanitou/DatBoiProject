@@ -16361,7 +16361,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TiledBackground" uid="946">
+                <instance type="movingBlocks" uid="946">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -16381,7 +16381,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TiledBackground" uid="945">
+                <instance type="movingBlocks" uid="945">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>

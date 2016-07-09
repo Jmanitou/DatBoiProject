@@ -244,25 +244,25 @@
                             <sub-events>
                                 <event-block sid="9156150670470506">
                                     <conditions>
-                                        <condition id="-14" name="Pick by unique ID" sid="3830272060786199" type="TiledBackground">
+                                        <condition id="-14" name="Pick by unique ID" sid="3830272060786199" type="movingBlocks">
                                             <param id="0" name="Unique ID">945</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-2" name="Set Y" sid="7814499622892995" type="TiledBackground">
-                                            <param id="0" name="Y">TiledBackground.Y +50</param>
+                                        <action id="-2" name="Set Y" sid="7814499622892995" type="movingBlocks">
+                                            <param id="0" name="Y">movingBlocks.Y +50</param>
                                         </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="2767390138868457">
                                     <conditions>
-                                        <condition id="-14" name="Pick by unique ID" sid="1539228833404498" type="TiledBackground">
+                                        <condition id="-14" name="Pick by unique ID" sid="1539228833404498" type="movingBlocks">
                                             <param id="0" name="Unique ID">946</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-2" name="Set Y" sid="2981100451736278" type="TiledBackground">
-                                            <param id="0" name="Y">TiledBackground.Y +50</param>
+                                        <action id="-2" name="Set Y" sid="2981100451736278" type="movingBlocks">
+                                            <param id="0" name="Y">movingBlocks.Y +50</param>
                                         </action>
                                     </actions>
                                 </event-block>
