@@ -1036,6 +1036,18 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="afterBoss" sid="2297685253019156">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="wasd" sid="9833297230745104">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="characterHealth" sid="1782774140936421">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="EnemyHealth" sid="1667611312298472">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

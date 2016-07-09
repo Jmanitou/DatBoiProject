@@ -383,7 +383,7 @@
                     <actions>
                         <action id="-12" name="Subtract from" sid="8406175124305733" type="enemy">
                             <param id="0" name="Instance variable">Health</param>
-                            <param id="1" name="Value">20</param>
+                            <param id="1" name="Value">25</param>
                         </action>
                     </actions>
                 </event-block>

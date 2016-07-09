@@ -64,6 +64,10 @@
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="-9" name="Destroy" sid="5605704388682229" type="bossRage" />
+                        <action id="-3" name="Set position" sid="3769575451947216" type="afterBoss">
+                            <param id="0" name="X">1085</param>
+                            <param id="1" name="Y">1575</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="8482920918530118">
