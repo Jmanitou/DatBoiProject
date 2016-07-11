@@ -389,5 +389,19 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="3788848866882527">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9591007474463969" type="soldier">
+                    <param id="0" name="Object">laserEnemy</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="4414170426632658" type="soldier">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="-9" name="Destroy" sid="8559416592819241" type="laserEnemy" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

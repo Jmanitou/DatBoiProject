@@ -1177,7 +1177,7 @@
                     <properties>
                         <text>Cognition</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Haettenschweiler,-67,400,0</font>
+                        <font>Arial,-48,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -1188,11 +1188,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>325</x>
-                        <y>108</y>
+                        <x>321</x>
+                        <y>116</y>
                         <z>0</z>
-                        <width>210</width>
-                        <height>105</height>
+                        <width>206</width>
+                        <height>67</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

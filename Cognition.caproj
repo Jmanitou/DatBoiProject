@@ -1048,6 +1048,9 @@
         <object-type name="EnemyHealth" sid="1667611312298472">
             <plugin id="Text" />
         </object-type>
+        <object-type name="enemyBullets" sid="4978985216273971">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

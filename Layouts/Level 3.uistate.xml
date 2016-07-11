@@ -5,10 +5,10 @@ It is entirely optional and the project will load without it.  If you are placin
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
         <position-x>854</position-x>
-        <position-y>2319.64</position-y>
-        <position-z>417.725</position-z>
+        <position-y>776.805</position-y>
+        <position-z>235.795</position-z>
         <lookat-x>854</lookat-x>
-        <lookat-y>2319.64</lookat-y>
+        <lookat-y>776.805</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>1</snap-to-grid>
@@ -25,7 +25,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <active-layer name="Main" />
     <layers>
-        <layer locked="1" name="Background" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Background" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Main" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="HUD" parallax-in-editor="0" visible="1" />
     </layers>
